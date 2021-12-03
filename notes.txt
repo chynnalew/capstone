@@ -1,0 +1,9 @@
+common features:
+gallery component
+  - flash page
+  - finished pieces
+  - non tattoo art (pet portraits for v?)
+contact (usually email form)/ book with artist!
+after care 
+about artist (sometimes first visible component)
+
