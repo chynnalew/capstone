@@ -1,18 +1,33 @@
 .header{
-  background-image: url(../img/img1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.mainLogo{
+.backImg{
   animation: fadeIn 5s;
+  background-image: url(../img/img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width:100%;
+  z-index: 0;
+  position:relative;
+}
+
+.mainLogo{
+  animation: fadeInDelay 4s;
+  z-index:5;
+  position:absolute;
 }
 
 @keyframes fadeIn {
   0% { opacity:0 }
+  100% { opacity:1 }
+}
+@keyframes fadeInDelay {
+  0% { opacity:0 }
+  20% {opacity:0}
   100% { opacity:1 }
 }
