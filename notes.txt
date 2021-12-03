@@ -1,9 +1,63 @@
-common features:
-gallery component
-  - flash page
-  - finished pieces
-  - non tattoo art (pet portraits for v?)
-contact (usually email form)/ book with artist!
-after care 
-about artist (sometimes first visible component)
+Components:
+- ABOUT ME (main scroll?)
+- Gallery (standalone)
+  - Main Gallery (fade in)
+  - Flash (fade in)
+  - Pet Portraits (fade in)
+- FAQ (see good kind site for inspo) (main scroll)
+- LOCATION (main scroll)
+  -google map, link to anatomy tattoo site
+- SHOP (link only)
+  - link to big cartel (https://swampwitchtattoos.bigcartel.com/)
+- CONTACT (standalone)
+  - policies (terms and conditions) 
+    -section on contact
+    -- must read to continue (accept policies button)
+    -- upload vax card to continue?
+  - email form
+    - their email (with confirm email is accurate)
+    - inspo photos
+    - placement
+    - size
+    - color? black and grey?
+    - details
+    - budget
+
+
+Style guide:
+- logo font: https://www.1001freefonts.com/minster.font
+-black and white (main theme)
+  - gold = main color (hex #7d6634)
+  - blue = secondary color (hex )
+  - links = blue? (bold and gold on hover) 
+  - black background
+
+
+
+Photos Needed:
+- shop photos
+  - work station photos
+- gallery photos (tattoos, flash, and paintings)
+
+
+
+Things we like:
+components fading in on scroll
+
+'main page' mostly black and white with text as accent colors
+- try to keep photos black and white on this page?
+
+gallery page will have more color?
+
+inspo: https://www.floatinglotustattoo.com/
+  -likes how some links snap to page, others fade out initial components (ex:gallery link)
+
+inspo: https://www.goodkindtattoo.com/
+  -color pallet
+  - black and white (main theme)
+  - gold = main color
+  - links = blue? (bold and gold on hover)
+  - black background
+  --'loading' (splash image) is the logo on a black screen
+    --'SW'
 
