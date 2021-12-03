@@ -1,0 +1,26 @@
+Name of Student:
+	Chynna Lew
+
+Name of Project:
+	Tattoo Site (for Victoria Varty @ Anatomy Tattoo)
+
+Project's Purpose or Goal: 
+	This site will act as a portfolio/ communication app for a local tattoo artist. She wants a dynamic site that stands apart from traditional tattoo websites.
+
+List the absolute minimum features the project requires to meet this purpose or goal:
+	Media scaling for dynamic viewing on multiple screen sizes
+	Connection to Instagram (and Tik Tok?). She’s okay with links, but would prefer to have an Instagram slideshow.
+	Feature to allow clients to fill out a form that sends her an email
+	Finding an affordable web host for the artist to deploy her new site
+
+What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
+	I am planning on using React for the front end (this may change depending on our Friday consultation). If not React, I’ll use vanilla JS with Html and SCSS.
+	She really wants the site to be dynamic, so I expect the project to heavily rely on SCSS.
+
+If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
+	Building out a scheduling application that allows clients to request consultation/ appointment dates/times and upload reference photos.
+	-Allowing the artist to approve or deny scheduling requests
+
+What additional tools, frameworks, libraries, APIs, or other resources will these additional features require?
+	If she decides she wants a scheduling application built into the site (stretch goal), I’ll also use C# and MySql as the backend.
+	I’m not 100% positive on the authentication I’d like to use, but I’m leaning towards Userfront Framework.
