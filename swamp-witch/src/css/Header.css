@@ -1,3 +1,28 @@
+@font-face{
+  font-family: 'minster1';
+  src: url(../assets/fonts/minster1.ttf);
+}
+@font-face{
+  font-family: 'minster2';
+  src: url(../assets/fonts/minster2.ttf);
+}
+@font-face{
+  font-family: 'minster3';
+  src: url(../assets/fonts/minster3.ttf);
+}
+@font-face{
+  font-family: 'minster4';
+  src: url(../assets/fonts/minster4.ttf);
+}
+@font-face{
+  font-family: 'minster5';
+  src: url(../assets/fonts/minster5.ttf);
+}
+@font-face{
+  font-family: 'minster6';
+  src: url(../assets/fonts/minster6.ttf);
+}
+
 .header{
   height: 100vh;
   display: flex;
@@ -7,7 +32,7 @@
 
 .backImg{
   animation: fadeIn 5s;
-  background-image: url(../img/img1.jpg);
+  background-image: url(../assets/img/img1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -20,7 +45,13 @@
   animation: fadeInDelay 4s;
   z-index:5;
   position:absolute;
+  font-family:'minster1', Fallback, sans-serif;
+  font-size: 10vw;
+  color:white;
+  text-shadow: 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634,0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634,
+  0 0 10vw black,0 0 7vw black, 0 0 5vw black;
 }
+
 
 @keyframes fadeIn {
   0% { opacity:0 }
