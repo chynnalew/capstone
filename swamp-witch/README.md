@@ -44,6 +44,7 @@ Components:
 ## Diagrams / Component Layout
 <img src='../victoriaTattoo.png' alt='page plan'/>
 <br/>
+<img src= '../swampWitchComponents.jpg' alt='component tree'/>
 
 
 ## Setup/Installation Requirements
