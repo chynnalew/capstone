@@ -39,7 +39,7 @@
   width:100%;
   z-index: 0;
   position:relative;
-  box-shadow: inset 0 0 15vw #89a5d86e;
+  box-shadow: inset 0 0 15vw #7f90b16e;
 }
 
 .mainLogo{
@@ -47,11 +47,12 @@
   z-index:5;
   position:absolute;
   font-family:'minster1', Fallback, sans-serif;
+  font-weight: 100;
   font-size: 10vw;
-  color:white;
+  color:rgb(231, 231, 231);
   text-shadow:
   0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634,0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634,
-  0 0 10vw black,0 0 7vw black, 0 0 5vw black;
+  0 0 15vw black, 0 0 10vw black,0 0 7vw black, 0 0 5vw black;
 }
 
 
