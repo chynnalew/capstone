@@ -1,9 +1,19 @@
 12/11
-7:45am - 7:50am restructure file tree
-7:45am - 8:10am sort through images, re-name, add to project
-8:10am - 8:45 work on about section styling, look for google fonts to compliment logo font
-8:45 - 9:45 navbar styling
-10:00am -11:20am Add FAQ component, create accordion effect with css. (took forever to figure out how to show/hide, but now I know about target!)
-11:20-12:00 WIP, refresher on google maps API, set up new project to get API key. https://javascript.plainenglish.io/how-to-add-a-custom-google-map-with-react-faf009e4d2b5
-12:00-12:30 failed to use maps with that tutorial. switching npm dependencies
-12:30 - 1:30pm implement google maps api with google-maps-react (ended up combining some of the tutorial stuff and the docs)
+7:45am - 7:50am 
+  restructure file tree
+7:45am - 8:10am 
+  sort through images, re-name, add to project
+8:10am - 8:45 
+  work on about section styling, look for google fonts to compliment logo font
+8:45 - 9:45 
+  navbar styling
+10:00am -11:20am 
+  Add FAQ component, create accordion effect with css. (took forever to figure out how to show/hide, but now I know about target!)
+11:20am -12:00pm 
+  WIP, refresher on google maps API, set up new project to get API key. https://javascript.plainenglish.io/how-to-add-a-custom-google-map-with-react-faf009e4d2b5
+12:00pm -12:30 
+  failed to use maps with that tutorial. switching npm dependencies
+12:30pm - 1:30pm 
+  implement google maps api with google-maps-react (ended up combining some of the tutorial stuff and the docs) yay!
+1:30-2:00pm 
+  refactored FAQ to use hooks instead of #, realized it was snapping to the wrong part of the page with #
