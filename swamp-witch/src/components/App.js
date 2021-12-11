@@ -1,4 +1,3 @@
-import '../css/App.css';
 import SiteControl from './SiteControl';
 
 function App() {

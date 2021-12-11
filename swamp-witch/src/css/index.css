@@ -1,10 +1,86 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* GLOBAL STYLES */
+
+@font-face{
+  font-family: 'minster1';
+  src: url(../assets/fonts/minster1.ttf);
 }
 
+html, body{
+  background-color: black;
+  color: white;
+  font-family:'Montserrat', sans-serif;
+}
 
+/* HEADER STYLES */
+
+.header{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backImg{
+  animation: fadeIn 5s;
+  background-image: url(../assets/img/img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width:100%;
+  z-index: 0;
+  position:relative;
+  box-shadow: inset 0 0 15vw #7f90b16e;
+}
+
+.mainLogo{
+  animation: fadeInDelay 4s;
+  z-index:5;
+  position:absolute;
+  font-family:'minster1', Fallback, sans-serif;
+  font-weight: 100;
+  font-size: 10vw;
+  color:rgb(231, 231, 231);
+  text-shadow:
+  0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634,0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634,
+  0 0 15vw black, 0 0 10vw black,0 0 7vw black, 0 0 5vw black;
+}
+
+@keyframes fadeIn {
+  0% { opacity:0 }
+  100% { opacity:1 }
+}
+@keyframes fadeInDelay {
+  0% { opacity:0 }
+  20% {opacity:0}
+  80% { opacity:1 }
+}
+
+/* NAVBAR STYLES */
+
+.navBar{
+  border-bottom: 3px solid #7f90b1;
+  font-family: 'Bebas Neue';
+}
+
+/* ABOUT STYLES */
+
+.aboutHeader{
+  font-family: 'minster1';
+  font-weight: 100;
+  font-size: 5vw;
+  width:100%;
+  text-align: center;
+}
+.victoria{
+  width: 40%;
+  height: auto;
+  float: left;
+}
+
+.aboutText{
+  margin-right:2%;
+  font-size: 1.75vw;
+  float: right;
+  width: 50%;
+
+}
