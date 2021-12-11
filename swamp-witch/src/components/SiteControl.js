@@ -3,6 +3,7 @@ import About from './About';
 import Header from './Header';
 import NavBar from './NavBar';
 import FAQ from './FAQ';
+import Location from './Location';
 
 class SiteControl extends React.Component {
 
@@ -16,10 +17,12 @@ class SiteControl extends React.Component {
   render() {
     return (
       <div>
+        <Location />
         <Header />
         <NavBar />
         <About />
         <FAQ />
+        
       </div>
     )
   }
