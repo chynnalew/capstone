@@ -17,3 +17,5 @@
   implement google maps api with google-maps-react (ended up combining some of the tutorial stuff and the docs) yay!
 1:30-2:00pm 
   refactored FAQ to use hooks instead of #, realized it was snapping to the wrong part of the page with #
+2:00pm - 245pm
+  work on styling for location component, realize google maps doesn't auto scale TT^TT
