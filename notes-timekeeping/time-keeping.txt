@@ -4,4 +4,6 @@
 8:10am - 8:45 work on about section styling, look for google fonts to compliment logo font
 8:45 - 9:45 navbar styling
 10:00am -11:20am Add FAQ component, create accordion effect with css. (took forever to figure out how to show/hide, but now I know about target!)
-11:20-12:00 WIP, refresher on google maps API, set up new project to get API key. starting this tutorial after lunch https://javascript.plainenglish.io/how-to-add-a-custom-google-map-with-react-faf009e4d2b5
+11:20-12:00 WIP, refresher on google maps API, set up new project to get API key. https://javascript.plainenglish.io/how-to-add-a-custom-google-map-with-react-faf009e4d2b5
+12:00-12:30 failed to use maps with that tutorial. switching to this one https://developers.google.com/maps/documentation/javascript/react-map
+12:30
