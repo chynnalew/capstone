@@ -2,6 +2,7 @@ import React from 'react';
 import About from './About';
 import Header from './Header';
 import NavBar from './NavBar';
+import FAQ from './FAQ';
 
 class SiteControl extends React.Component {
 
@@ -18,6 +19,7 @@ class SiteControl extends React.Component {
         <Header />
         <NavBar />
         <About />
+        <FAQ />
       </div>
     )
   }
