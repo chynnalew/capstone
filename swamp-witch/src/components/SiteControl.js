@@ -1,9 +1,9 @@
 import React from 'react';
-import About from './About';
-import Header from './Header';
-import NavBar from './NavBar';
-import FAQ from './FAQ';
-import Location from './MapComponent';
+import About from './SplashComponents/About';
+import Header from './SplashComponents/Header';
+import NavBar from './SplashComponents/NavBar';
+import FAQ from './FAQ/FAQ';
+import Location from './SplashComponents/Location';
 
 class SiteControl extends React.Component {
 

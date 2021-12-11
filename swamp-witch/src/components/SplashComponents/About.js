@@ -1,5 +1,5 @@
 import React from "react";
-import victoria from "../assets/img/victoria2.JPG";
+import victoria from "../../assets/img/victoria2.JPG";
 
 const About = () => {
   return (

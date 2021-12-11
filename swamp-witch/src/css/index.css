@@ -186,21 +186,8 @@ ul li a:hover {
 }
 
 .answer {
-  max-height:0;
-  visibility:hidden;
-  overflow:hidden;
-  position: relative;
-  transition: max-height 300ms;
-}
-
-.faqItem:target .answer{
   margin: 10px;
   padding:10px;
   border-left: 3px solid rgb(154, 185, 218);
   background-color: rgb(39, 48, 58);
-  max-height:500px;
-  visibility:visible;
-}
-.faqItem:target ion-icon{
-  display:none;
 }
