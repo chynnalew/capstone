@@ -3,7 +3,7 @@ import victoria from "../assets/img/victoria2.JPG";
 
 const About = () => {
   return (
-    <div className="about">
+    <div id='about'>
       <h1 className="sectionHeader">About Victoria</h1>
       <img className="victoria" src={victoria} alt="victora varty" />
       <p className="aboutText">

@@ -145,7 +145,7 @@ ul li a:hover {
 
 /* ABOUT STYLES */
 
-.about {
+#about {
   display: inline-block;
 }
 .victoria {
@@ -163,14 +163,11 @@ ul li a:hover {
 
 /*FAQ styles*/
 
-.faq {
+#faq {
   padding: 10px;
   background-color: #7f90b138;
 }
-.faqQuestions {
-  align-items: center;
-  justify-content: center;
-}
+
 .faqItem {
   background-color: black;
   border-radius: 3px;
@@ -178,7 +175,7 @@ ul li a:hover {
   padding: 10px;
   box-shadow: 2px 2px 5px rgb(60, 115, 151);
 }
-.faq a {
+#faq a {
   font-size: 2vw;
   text-decoration: none;
   color: goldenrod;
@@ -188,21 +185,21 @@ ul li a:hover {
   justify-content: space-between;
 }
 
-.faq .remove {
-  display: none;
-}
-
 .answer {
-  display:none;
+  max-height:0;
+  visibility:hidden;
+  overflow:hidden;
   position: relative;
-  margin: 10px;
-  padding:10px;
-  background-color: rgb(39, 48, 58);
-  border-left: 3px solid rgb(154, 185, 218);
+  transition: max-height 300ms;
 }
 
 .faqItem:target .answer{
-  display:block;
+  margin: 10px;
+  padding:10px;
+  border-left: 3px solid rgb(154, 185, 218);
+  background-color: rgb(39, 48, 58);
+  max-height:500px;
+  visibility:visible;
 }
 .faqItem:target ion-icon{
   display:none;

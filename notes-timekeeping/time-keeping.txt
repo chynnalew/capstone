@@ -3,4 +3,4 @@
 7:45am - 8:10am sort through images, re-name, add to project
 8:10am - 8:45 work on about section styling, look for google fonts to compliment logo font
 8:45 - 9:45 navbar styling
-10:00am -11:00am Add FAQ component, create accordion effect with css
+10:00am -11:20am Add FAQ component, create accordion effect with css. (took forever to figure out how to show/hide, but now I know about target!)

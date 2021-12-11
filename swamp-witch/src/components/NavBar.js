@@ -5,7 +5,7 @@ const NavBar = () => {
     <nav>
       <ul>
         <li>
-          <a href="#">ABOUT</a>
+          <a href="#about">ABOUT</a>
         </li>
         <li>
           <a href="#">GALLERY</a>
@@ -23,10 +23,10 @@ const NavBar = () => {
           </ul>
         </li>
         <li>
-          <a href="#">FAQ</a>
+          <a href="#faq">FAQ</a>
         </li>
         <li>
-          <a href="#">SHOP</a>
+          <a href="https://swampwitchtattoos.bigcartel.com/">SHOP</a>
         </li>
         <li>
           <a href="#">CONTACT</a>
