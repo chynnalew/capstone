@@ -1,15 +1,39 @@
-import React from 'react';
+import React from "react";
 
 const NavBar = () => {
   return (
-    <div class='navBar'>
-      <p>About</p>
-      <p>Gallery</p>
-      <p>FAQ</p>
-      <p>Shop</p>
-      <p>Contact</p>
-    </div>
-  )
-}
+      <nav>
+        <ul>
+          <li>
+            <a href="#">ABOUT</a>
+          </li>
+          <li>
+            <a href="#">GALLERY</a>
+            <span class="dropBottom"></span>
+            <ul>
+              <li>
+              <a href="#">Tattoos</a>
+              </li>
+              <li>
+              <a href="#">Flash</a>
+              </li>
+              <li>
+                <a href="#">Pet Portraits</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">FAQ</a>
+          </li>
+          <li>
+            <a href="#">SHOP</a>
+        </li>
+        <li>
+            <a href="#">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+  );
+};
 
 export default NavBar;

@@ -41,7 +41,7 @@ html, body{
   font-size: 10vw;
   color:rgb(231, 231, 231);
   text-shadow:
-  0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634,0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634,
+  0 0 4px #4b412c, 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634,0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634,
   0 0 15vw black, 0 0 10vw black,0 0 7vw black, 0 0 5vw black;
 }
 
@@ -57,10 +57,70 @@ html, body{
 
 /* NAVBAR STYLES */
 
-.navBar{
-  border-bottom: 3px solid #7f90b1;
-  font-family: 'Bebas Neue';
+.dropBottom{
+	display: block;
+	position: absolute;
+	left: 0px;
+	width:100%;
+	height: 100%;
+	top: 0px;
+  bottom: 0px;
 }
+.dropBottom:hover{
+  color:goldenrod;
+}
+nav {
+	display:table;
+  width:100%;
+  box-shadow:0px 2px 0px goldenrod;
+}
+nav ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+  width:100%
+}
+
+nav ul ul {
+	opacity:0;
+	position:absolute;
+	visibility:hidden;
+	transition:all .4s ease;
+	-webkit-transition:all .4s ease;
+}
+nav ul ul li{
+  float:none;
+  width:100%;
+  text-align:center;
+}
+
+nav ul li:hover > ul {
+	opacity:1;
+	top:100%;
+	visibility:visible;
+}
+nav ul li {
+	float:left;
+	position:relative;
+	background-color:black;
+  width:20%;
+}
+nav a {
+	text-decoration:none;
+	display:block;
+	color:rgb(60, 115, 151);
+	padding:10px 15px;
+	text-align:center;
+  font-family:'Bebas Neue' ;
+  font-size: 2vw;
+}
+ul li:hover {
+	color:goldenrod;
+}
+ul li a:hover {
+	color: goldenrod
+}
+
 
 /* ABOUT STYLES */
 
