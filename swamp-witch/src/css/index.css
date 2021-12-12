@@ -212,3 +212,18 @@ ul li a:hover {
 .mapText{
   text-align:left;
 }
+
+/* GALLERY STYLES */
+
+#gallery{
+  padding: 10px;
+}
+#gallery img {
+  height:300px;
+  width: auto;
+}
+.photo{
+  margin: 10px;
+  border:5px white solid;
+  float:left
+}

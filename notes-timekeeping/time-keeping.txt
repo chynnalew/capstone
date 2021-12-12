@@ -17,5 +17,11 @@
   implement google maps api with google-maps-react (ended up combining some of the tutorial stuff and the docs) yay!
 1:30-2:00pm 
   refactored FAQ to use hooks instead of #, realized it was snapping to the wrong part of the page with #
-2:00pm - 245pm
+2:00pm - 2:45pm
   work on styling for location component, realize google maps doesn't auto scale TT^TT
+2:45pm-2:50pm
+  frustratingly realize an embedded map will work better than using the API... remove hours of hard work and add embedded map...
+2:50-3:00pm
+  much needed break
+3:00pm-4:30pm: 
+  start building gallery component
