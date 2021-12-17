@@ -12,8 +12,18 @@ class SiteControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      
+      galleryVisible: false,
+      lightboxVisible: false,
+      currentImage: [],
     }
+  }
+
+  handleGalleryClick = (index) => {
+    const image = tattoos[index];
+    this.setState({
+      currentImage: [{ ...image }],
+      lightboxVisible: !this.state.lightboxVisible
+    })
   }
 
   render() {
@@ -21,7 +31,7 @@ class SiteControl extends React.Component {
       <div>
         <Header />
         <NavBar />
-        <Gallery photos={tattoos} />
+        <Gallery onGalleryClick={this.handleGalleryClick} photos={tattoos} />
         <About />
         <FAQ />
         <Location />

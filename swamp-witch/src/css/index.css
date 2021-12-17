@@ -225,7 +225,7 @@ ul li a:hover {
   align-content: flex-start;
 }
 #gallery img {
-  width: 300px;
+  height:400px;
 }
 .photo {
   margin: 10px;

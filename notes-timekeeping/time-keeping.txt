@@ -29,4 +29,5 @@
 ////////////////////////////////////////
 12/7
 
-8:00am 
+8:00am - 8:30am:
+  add hover effects for gallery images, update image styling
