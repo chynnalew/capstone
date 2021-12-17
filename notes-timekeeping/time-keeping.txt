@@ -39,3 +39,5 @@
   get placeholder images for flash/pet portraits (screen-grabs from IG, waiting on actual gallery pics)
 10:00am-10:15am 
   create object arrays from flash/ pet portraits
+10:15-11am:
+  adding smooth scroll. Realized react-scroll doesn't work on component state change

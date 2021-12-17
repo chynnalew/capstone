@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 const Gallery = (props) => {
   return (
+    <div id='galleryContainer'>
+      <h1 className="sectionHeader">Gallery</h1>
     <div id='gallery'>
       {props.photos.map((photo, index) => (
           <div class='photo'>
@@ -10,7 +12,8 @@ const Gallery = (props) => {
             onClick={()=>props.onGalleryImageClick(index)}/>
         </div>
       ))}
-    </div>
+      </div>
+      </div>
   )
 }
 

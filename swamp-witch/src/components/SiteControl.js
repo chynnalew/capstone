@@ -14,8 +14,7 @@ class SiteControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      mainPageVisible: true,
-      tattooGalleryVisible: false,
+      tattooGalleryVisible: true,
       flashGalleryVisible: false,
       petGalleryVisible: false,
       lightboxVisible: false,
@@ -24,20 +23,8 @@ class SiteControl extends React.Component {
     };
   }
 
-  handleMainComponentsClick = () => {
-    this.setState({
-      mainPageVisible: true,
-      tattooGalleryVisible: false,
-      flashGalleryVisible: false,
-      petGalleryVisible: false,
-      lightboxVisible: false,
-      contactVisible: false,
-    });
-  };
-
   handleTattoosGalleryClick = () => {
     this.setState({
-      mainPageVisible: false,
       tattooGalleryVisible: true,
       flashGalleryVisible: false,
       petGalleryVisible: false,
@@ -48,7 +35,6 @@ class SiteControl extends React.Component {
 
   handleFlashGalleryClick = () => {
     this.setState({
-      mainPageVisible: false,
       tattooGalleryVisible: false,
       flashGalleryVisible: true,
       petGalleryVisible: false,
@@ -59,23 +45,11 @@ class SiteControl extends React.Component {
 
   handlePetGalleryClick = () => {
     this.setState({
-      mainPageVisible: false,
       tattooGalleryVisible: false,
       flashGalleryVisible: false,
       petGalleryVisible: true,
       lightboxVisible: false,
       contactVisible: false,
-    });
-  };
-
-  handleContactClick = () => {
-    this.setState({
-      mainPageVisible: false,
-      tattooGalleryVisible: false,
-      flashGalleryVisible: false,
-      petGalleryVisible: false,
-      lightboxVisible: false,
-      contactVisible: true,
     });
   };
 
@@ -95,80 +69,57 @@ class SiteControl extends React.Component {
   };
 
   render() {
-    let currentlyVisibleState;
-    if (this.state.mainPageVisible) {
-      currentlyVisibleState = (
-        <React.Fragment>
-          <About />
-          <FAQ />
-          <Location />
-        </React.Fragment>
-      );
-    } else if (this.state.tattooGalleryVisible) {
-      currentlyVisibleState = (
-        <Gallery
-          onGalleryImageClick={this.handleGalleryImageClick}
-          photos={tattoos}
-        />
-      );
+    let album;
+    
+    if (this.state.tattooGalleryVisible) {
+      album = tattoos
     } else if (this.state.flashGalleryVisible) {
-      currentlyVisibleState = (
-        <Gallery
-          onGalleryImageClick={this.handleGalleryImageClick}
-          photos={flash}
-        />
-      );
+      album = flash
     } else if (this.state.petGalleryVisible) {
-      currentlyVisibleState = (
-        <Gallery
-          onGalleryImageClick={this.handleGalleryImageClick}
-          photos={pets}
-        />
-      );
-    } else if (this.state.lightboxVisible && this.state.tattooGalleryVisible) {
-      currentlyVisibleState = (
-        <React.Fragment>
-          <Gallery
-            onGalleryImageClick={this.handleGalleryImageClick}
-            photos={tattoos}
-          />
-          <Lightbox image={this.state.currentImage[0]} />
-        </React.Fragment>
-      );
-    } else if (this.state.lightboxVisible && this.state.flashGalleryVisible) {
-      currentlyVisibleState = (
-        <React.Fragment>
-          <Gallery
-            onGalleryImageClick={this.handleGalleryImageClick}
-            photos={flash}
-          />
-          <Lightbox image={this.state.currentImage[0]} />
-        </React.Fragment>
-      );
-    } else if (this.state.lightboxVisible && this.state.petGalleryVisible) {
-      currentlyVisibleState = (
-        <React.Fragment>
-          <Gallery
-            onGalleryImageClick={this.handleGalleryImageClick}
-            photos={pets}
-          />
-          <Lightbox image={this.state.currentImage[0]} />
-        </React.Fragment>
-      );
-    }
-    // else if (this.state.contactVisible) {
-    //   currentlyVisibleState = <Contact />;
-    // }
-    return (
-      <div>
+      album = pets
+    } 
+    console.log(album)
+    let currentlyVisibleState = 
+      <React.Fragment>
         <Header />
         <NavBar
+          state={this.state}
           onMainComponentsClick={this.handleMainComponentsClick}
           onTattoosGalleryClick={this.handleTattoosGalleryClick}
           onFlashGalleryClick={this.handleFlashGalleryClick}
           onPetGalleryClick={this.handlePetGalleryClick}
           onContactClick={this.handleContactClick}
         />
+        <About />
+        <FAQ />
+        <Gallery onGalleryImageClick={this.handleGalleryImageClick}
+          photos={album} />
+        <Location />
+      </React.Fragment>
+
+    if (this.state.lightboxVisible) {
+      currentlyVisibleState = (
+        <React.Fragment>
+        <Header />
+        <NavBar
+          state={this.state}
+          onMainComponentsClick={this.handleMainComponentsClick}
+          onTattoosGalleryClick={this.handleTattoosGalleryClick}
+          onFlashGalleryClick={this.handleFlashGalleryClick}
+          onPetGalleryClick={this.handlePetGalleryClick}
+          onContactClick={this.handleContactClick}
+        />
+        <About />
+        <FAQ />
+        <Gallery onGalleryImageClick={this.handleGalleryImageClick}
+          photos={album} />
+        <Lightbox image={this.state.currentImage[0]} />
+        <Location />
+      </React.Fragment>
+      );
+    }
+    return (
+      <div>
         {currentlyVisibleState}
       </div>
     );
