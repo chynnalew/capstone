@@ -5,7 +5,7 @@ const Gallery = (props) => {
     <div id='gallery'>
       {props.photos.map((photo, index) => (
           <div class='photo'>
-            <img src={photo.src} alt={photo.alt} />
+          <img cass='galleryImage' src={photo.src} alt={photo.alt} key={index}/>
           </div>
       ))}
     </div>

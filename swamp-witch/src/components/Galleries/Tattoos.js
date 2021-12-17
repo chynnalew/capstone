@@ -10,10 +10,6 @@ import tombNun from '../../assets/img/tattoos/tomb-nun.jpeg';
 
 export const tattoos = [
   {
-    src: butterflyBeetles,
-    alt: 'butterfly beetle tattoo'
-  },
-  {
     src: coffinStairs,
     alt: 'coffin tattoo'
   },
@@ -44,5 +40,9 @@ export const tattoos = [
   {
     src: tombNun,
     alt: ' tombNun'
+  },
+  {
+    src: butterflyBeetles,
+    alt: 'butterfly beetle tattoo'
   },
 ]
