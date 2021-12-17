@@ -1,5 +1,4 @@
 import React from 'react';
-import Lightbox from './Lightbox';
 import PropTypes from 'prop-types';
 
 const Gallery = (props) => {
