@@ -155,9 +155,10 @@ class SiteControl extends React.Component {
           <Lightbox image={this.state.currentImage[0]} />
         </React.Fragment>
       );
-    } else if (this.state.contactVisible) {
-      currentlyVisibleState = <Contact />;
     }
+    // else if (this.state.contactVisible) {
+    //   currentlyVisibleState = <Contact />;
+    // }
     return (
       <div>
         <Header />

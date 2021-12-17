@@ -37,3 +37,5 @@
   switch gears and add state/ conditional rendering
 9:45am - 10:00am
   get placeholder images for flash/pet portraits (screen-grabs from IG, waiting on actual gallery pics)
+10:00am-10:15am 
+  create object arrays from flash/ pet portraits

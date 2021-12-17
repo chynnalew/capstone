@@ -1,36 +1,37 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from 'react-scroll';
 
 const NavBar = (props) => {
   return (
-    <nav>
+    <nav className='sticky'>
       <ul>
         <li>
-          <a onClick={()=>props.onMainComponentsClick()} href="#about">ABOUT</a>
+          <Link onClick={()=>props.onMainComponentsClick()} to='about' smooth={true} duration={1000}>ABOUT</Link>
         </li>
         <li>
-          <a onClick={()=>props.onTattoosGalleryClick()}>GALLERY</a>
+          <a >GALLERY</a>
           <span className="dropBottom"></span>
           <ul>
             <li>
-              <a onClick={()=>props.onTattoosGalleryClick()}>Tattoos</a>
+              <Link onClick={()=>props.onTattoosGalleryClick()} to='gallery' smooth={true} duration={500}>Tattoos</Link>
             </li>
             <li>
-              <a onClick={()=>props.onFlashGalleryClick()}>Flash</a>
+              <Link onClick={()=>props.onFlashGalleryClick()} to='gallery' smooth={true} duration={500}>Flash</Link>
             </li>
             <li>
-              <a onClick={()=>props.onPetGalleryClick()}>Pet Portraits</a>
+              <Link onClick={()=>props.onPetGalleryClick()} to='gallery' smooth={true} duration={500}>Pet Portraits</Link>
             </li>
           </ul>
         </li>
         <li>
-          <a onClick={()=>props.onMainComponentsClick()} href="#faq">FAQ</a>
+          <Link onClick={()=>props.onMainComponentsClick()} to='faq' smooth={true} duration={1000}>FAQ</Link>
         </li>
         <li>
           <a href="https://swampwitchtattoos.bigcartel.com/">SHOP</a>
         </li>
         <li>
-          <a onClick={()=>props.onContactClick()}>CONTACT</a>
+          <Link onClick={()=>props.onContactClick()} to='contact' smooth={true} duration={1000}>CONTACT</Link>
         </li>
       </ul>
     </nav>

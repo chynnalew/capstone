@@ -9,45 +9,45 @@ import dog3 from '../../assets/img/Pets/dog3.png';
 import rat1 from '../../assets/img/Pets/rat1.png';
 import rat2 from '../../assets/img/Pets/rat2.png';
 
-export const Pets = [
+export const pets = [
   {
-    src: { cat1 },
+    src:  cat1 ,
     alt: "cat pet portrait"
   },
   {
-    src: { cat2 },
+    src:  cat2 ,
     alt: "cat pet portrait"
   },
   {
-    src: { cat3 },
+    src:  cat3 ,
     alt: "cat pet portrait"
   },
   {
-    src: { cat4 },
+    src:  cat4 ,
     alt: "cat pet portrait"
   },
   {
-    src: { cat5 },
+    src:  cat5 ,
     alt: "cat pet portrait"
   },
   {
-    src: { dog1 },
+    src:  dog1 ,
     alt: "dog pet portrait"
   },
   {
-    src: { dog2 },
+    src:  dog2 ,
     alt: "dog pet portrait"
   },
   {
-    src: { dog3 },
+    src:  dog3 ,
     alt: "dog pet portrait"
   },
   {
-    src: { rat1 },
+    src:  rat1 ,
     alt: "rat pet portrait"
   },
   {
-    src: { rat2 },
+    src:  rat2 ,
     alt: "rat pet portrait"
   },
 ]

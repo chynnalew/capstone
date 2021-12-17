@@ -8,41 +8,41 @@ import flash1 from '../../assets/img/Flash/flash1.png';
 import flash2 from '../../assets/img/Flash/flash2.png';
 import flash3 from '../../assets/img/Flash/flash3.png';
 
-export const Flash = [
+export const flash = [
   {
-    src: { bondage },
+    src:  bondage ,
     alt: 'bondage girl flash tattoo'
   },
   {
-    src: { candleSpider },
+    src:  candleSpider ,
     alt: 'candleSpider flash tattoo'
   },
   {
-    src: { harpy },
+    src:  harpy ,
     alt: 'harpy flash tattoo'
   },
   {
-    src: { catWitch },
+    src:  catWitch ,
     alt: 'catWitch flash tattoo'
   },
   {
-    src: { mermaid },
+    src:  mermaid ,
     alt: 'mermaid flash tattoo'
   },
   {
-    src: { spiderHand },
+    src:  spiderHand ,
     alt: 'spiderHand flash tattoo'
   },
   {
-    src: { flash1 },
+    src:  flash1 ,
     alt: 'flash1 flash tattoo'
   },
   {
-    src: { flash2 },
+    src:  flash2 ,
     alt: 'flash2 flash tattoo'
   },
   {
-    src: { flash3 },
+    src:  flash3 ,
     alt: 'flash3 flash tattoo'
   },
 ]
