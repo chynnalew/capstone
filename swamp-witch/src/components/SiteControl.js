@@ -1,7 +1,6 @@
 import React from "react";
 import About from "./SplashComponents/About";
 import Header from "./SplashComponents/Header";
-import NavBar from "./SplashComponents/NavBar";
 import FAQ from "./FAQ/FAQ";
 import Location from "./SplashComponents/Location";
 import { tattoos } from "./Galleries/Tattoos";
@@ -9,8 +8,8 @@ import Gallery from "./Galleries/Gallery";
 import Lightbox from "./Galleries/Lightbox";
 import { flash } from "./Galleries/Flash";
 import { pets } from "./Galleries/Pets";
-import NavBar2 from './SplashComponents/NavBar2';
-import { BrowserRouter as Router } from 'react-router-dom';
+import NavBar from './SplashComponents/NavBar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 class SiteControl extends React.Component {
   constructor(props) {
@@ -83,21 +82,22 @@ class SiteControl extends React.Component {
     
     let currentlyVisibleState = 
       <Router>
-        <NavBar2
+        <NavBar
         onTattoosGalleryClick={this.handleTattoosGalleryClick}
         onFlashGalleryClick={this.handleFlashGalleryClick}
-        onPetGalleryClick={this.handlePetGalleryClick}/>
-        <Header />
-        {/* <NavBar
-          onTattoosGalleryClick={this.handleTattoosGalleryClick}
-          onFlashGalleryClick={this.handleFlashGalleryClick}
-          onPetGalleryClick={this.handlePetGalleryClick}
-        /> */}
-        <About />
-        <FAQ />
-        <Gallery onGalleryImageClick={this.handleGalleryImageClick}
-          photos={album} />
-        <Location />
+          onPetGalleryClick={this.handlePetGalleryClick} />
+        <Routes>
+          <Route path='/' exact element={
+            <React.Fragment>
+              <Header />
+              <About />
+              <FAQ />
+              <Location />
+            </React.Fragment>
+          }/>
+          <Route path='/gallery' exact element={<Gallery onGalleryImageClick={this.handleGalleryImageClick}
+            photos={album} />}/>
+        </Routes>
       </Router>
 
     if (this.state.lightboxVisible) {

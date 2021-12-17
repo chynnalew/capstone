@@ -52,3 +52,7 @@
 
 12:00-1:00pm 
   lunch break!
+
+1:00pm -
+  completely redoing navbar. making sticky to top, adding logo, attempting to path with react-router-dom
+  (the page was looking a bit too much like a basic react dev portfolio with only smooth scroll)

@@ -1,45 +1,48 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { Link } from 'react-scroll';
+import { NavLink } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
-const NavBar = (props) => {
+const NavBar = () => {
+
+  const scrollWithOffset = (element) => {
+    const yCoordinate = element.getBoundingClientRect().top;
+    window.scrollTo({ top: yCoordinate, behavior: 'smooth' }); 
+}
+
   return (
-    <nav className='sticky'>
-      <ul>
-        <li>
-          <Link to='about' smooth={true} duration={1000} delay={100}>ABOUT</Link>
-        </li>
-        <li>
-          <a >GALLERY</a>
-          <ul >
-            <li>
-              <Link onClick={()=>props.onTattoosGalleryClick()} to='galleryContainer' smooth={true} duration={1000} delay={100}>Tattoos</Link>
-            </li>
-            <li>
-              <Link onClick={()=>props.onFlashGalleryClick()} to='galleryContainer' smooth={true} duration={1000} delay={100}>Flash</Link>
-            </li>
-            <li>
-              <Link onClick={()=>props.onPetGalleryClick()} to='galleryContainer' smooth={true} duration={1000} delay={100}>Pet Portraits</Link>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <Link to='faq' smooth={true} duration={1000} delay={100}>FAQ</Link>
-        </li>
-        <li>
-          <a href="https://swampwitchtattoos.bigcartel.com/">SHOP</a>
-        </li>
-        <li>
-          <Link to='contact' smooth={true} duration={1000} delay={100}>CONTACT</Link>
-        </li>
-      </ul>
-    </nav>
+    <div id="navBar">
+      <div className="bars">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+      <div className="navMenu">
+        <HashLink className="navLink" to="/#about" scroll={scrollWithOffset}>
+        About
+        </HashLink>
+        <NavLink className="navLink" to="/gallery" scroll={scrollWithOffset}>
+          Gallery
+        </NavLink>
+        <HashLink className="navLink" to="/#faq" scroll={scrollWithOffset}>
+          FAQ
+        </HashLink>
+        <NavLink className="navLink" to="/">
+          <h1>logo</h1>
+        </NavLink>
+        <a
+          className="navLink"
+          href="https://swampwitchtattoos.bigcartel.com/"
+          target="_blank"
+        >
+          Shop
+        </a>
+        <NavLink className="navLink" to="/contact" scroll={scrollWithOffset}>
+          Contact
+        </NavLink>
+        <NavLink className="navLink" to="/policies" scroll={scrollWithOffset}>
+          Policies
+        </NavLink>
+      </div>
+    </div>
   );
 };
 
-NavBar.propTypes = {
-  onTattoosGalleryClick: PropTypes.func,
-  onFlashGalleryClick: PropTypes.func,
-  onPetGalleryClick: PropTypes.func,
-}
 export default NavBar;
