@@ -9,6 +9,8 @@ import Gallery from "./Galleries/Gallery";
 import Lightbox from "./Galleries/Lightbox";
 import { flash } from "./Galleries/Flash";
 import { pets } from "./Galleries/Pets";
+import NavBar2 from './SplashComponents/NavBar2';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 class SiteControl extends React.Component {
   constructor(props) {
@@ -78,24 +80,25 @@ class SiteControl extends React.Component {
     } else if (this.state.petGalleryVisible) {
       album = pets
     } 
-    console.log(album)
+    
     let currentlyVisibleState = 
-      <React.Fragment>
+      <Router>
+        <NavBar2
+        onTattoosGalleryClick={this.handleTattoosGalleryClick}
+        onFlashGalleryClick={this.handleFlashGalleryClick}
+        onPetGalleryClick={this.handlePetGalleryClick}/>
         <Header />
-        <NavBar
-          state={this.state}
-          onMainComponentsClick={this.handleMainComponentsClick}
+        {/* <NavBar
           onTattoosGalleryClick={this.handleTattoosGalleryClick}
           onFlashGalleryClick={this.handleFlashGalleryClick}
           onPetGalleryClick={this.handlePetGalleryClick}
-          onContactClick={this.handleContactClick}
-        />
+        /> */}
         <About />
         <FAQ />
         <Gallery onGalleryImageClick={this.handleGalleryImageClick}
           photos={album} />
         <Location />
-      </React.Fragment>
+      </Router>
 
     if (this.state.lightboxVisible) {
       currentlyVisibleState = (

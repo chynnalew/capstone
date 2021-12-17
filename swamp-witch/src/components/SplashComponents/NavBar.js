@@ -11,8 +11,7 @@ const NavBar = (props) => {
         </li>
         <li>
           <a >GALLERY</a>
-          <span className="dropBottom"></span>
-          <ul>
+          <ul >
             <li>
               <Link onClick={()=>props.onTattoosGalleryClick()} to='galleryContainer' smooth={true} duration={1000} delay={100}>Tattoos</Link>
             </li>

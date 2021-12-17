@@ -242,3 +242,65 @@ ul li a:hover {
   0 0 30px black,
   0 0 40px black;
 }
+
+/* NAVBAR2 STYLES */
+
+#navBar2{
+  background:black;
+  height:60px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem calc((100vw-1000px)/2);
+  z-index: 10;
+  animation: fadeIn 5.5s;
+  border-bottom: 3px solid goldenrod;
+}
+
+.navLink {
+  text-decoration: none;
+  color: rgb(60, 115, 151);
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 2vw;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height:100%;
+  cursor: pointer;
+}
+
+.navLink:hover{
+  color: goldenRod;
+}
+
+.bars {
+  display:none;
+  color: white;
+  font-size: 30px;
+}
+
+.navMenu {
+  width:90%;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width:768px){
+  /*NAVBAR2*/
+  .bars{
+    display:block;
+    position:absolute;
+    top:0;
+    right:0;
+    transform: translate(-100%, 75%);
+    font-size: 1.8 rem;
+    cursor: pointer;
+  }
+  .navMenu{
+    display: none;
+  }
+}
+
