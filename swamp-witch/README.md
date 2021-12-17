@@ -42,9 +42,9 @@ Components:
     - budget
 
 ## Diagrams / Component Layout
-<img src='./assets/img/victoriaTattoo.png' alt='page plan'/>
+<img src='./src/assets/img/victoriaTattoo.png' alt='page plan'/>
 <br/>
-<img src= './assets/img/swampWitchComponents.jpg' alt='component tree'/>
+<img src= './src/assets/img/swampWitchComponents.jpg' alt='component tree'/>
 
 
 ## Setup/Installation Requirements
