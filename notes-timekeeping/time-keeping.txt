@@ -33,5 +33,7 @@
   add hover effects for gallery images, update image styling
 8:30-9:10am:
   start on writing handler functions for gallery and lightbox components
-9:10 - :
-  switch gears and start adding state/ conditional rendering
+9:10am - 9:45am:
+  switch gears and add state/ conditional rendering
+9:45am
+  add placeholder galleries for flash/pet portraits
