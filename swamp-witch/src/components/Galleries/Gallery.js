@@ -7,18 +7,16 @@ const Gallery = (props) => {
     <div id='gallery'>
       {props.photos.map((photo, index) => (
           <div class='photo'>
-          <img cass='galleryImage' src={photo.src} alt={photo.alt} key={index}
-            onClick={()=>props.onGalleryClick(index)}/>
+          <img src={photo.src} alt={photo.alt} key={index}
+            onClick={()=>props.onGalleryImageClick(index)}/>
         </div>
       ))}
-      <Lightbox whenCloseClicked={props.onCloseClick}/>
     </div>
   )
 }
 
 Gallery.propTypes = {
   photos: PropTypes.arrayOf(PropTypes.object),
-  onGalleryClick: PropTypes.func,
-  onCloseClick: PropTypes.func
+  onGalleryImageClick: PropTypes.func,
 }
 export default Gallery;

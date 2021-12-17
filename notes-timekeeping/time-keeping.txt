@@ -31,3 +31,7 @@
 
 8:00am - 8:30am:
   add hover effects for gallery images, update image styling
+8:30-9:10am:
+  start on writing handler functions for gallery and lightbox components
+9:10 - :
+  switch gears and start adding state/ conditional rendering
