@@ -1,14 +1,14 @@
 import React from "react";
-import About from "./SplashComponents/About";
-import Header from "./SplashComponents/Header";
+import About from "./HomeComponents/About";
+import Header from "./HomeComponents/Header";
 import FAQ from "./FAQ/FAQ";
-import Location from "./SplashComponents/Location";
+import Location from "./HomeComponents/Location";
 import { tattoos } from "./Galleries/Tattoos";
 import Gallery from "./Galleries/Gallery";
 import Lightbox from "./Galleries/Lightbox";
 import { flash } from "./Galleries/Flash";
 import { pets } from "./Galleries/Pets";
-import NavBar from './SplashComponents/NavBar';
+import NavBar from './HomeComponents/NavBar/NavBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 class SiteControl extends React.Component {
