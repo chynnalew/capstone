@@ -3,37 +3,32 @@ import { NavLink } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 
 const SideBar = (props) => {
-  const scrollWithOffset = (element) => {
-    const yCoordinate = element.getBoundingClientRect().top;
-    window.scrollTo({ top: yCoordinate, behavior: "smooth" });
-  };
-
   return (
     <div id="sideBar">
       <div className="closeIcon">
         <ion-icon name="close-circle-outline"></ion-icon>
       </div>
       <div className="navMenu2">
-        <HashLink onClick={()=>props.onSideBarClose()} className="navLink2" to="/#about" scroll={scrollWithOffset}>
+        <HashLink smooth onClick={()=>props.onSideBarClose()} className="navLink2" to="/#about">
           About
         </HashLink>
-        <NavLink className="navLink2" to="/gallery" scroll={scrollWithOffset}>
+        <NavLink onClick={()=>props.onSideBarClose()} className="navLink2" to="/gallery" >
           Gallery
         </NavLink>
-        <HashLink className="navLink2" to="/#faq" scroll={scrollWithOffset}>
+        <HashLink onClick={()=>props.onSideBarClose()} smooth className="navLink2" to="/#faq" >
           FAQ
         </HashLink>
-        <a
+        <a onClick={()=>props.onSideBarClose()}
           className="navLink2"
           href="https://swampwitchtattoos.bigcartel.com/"
           target="_blank"
         >
           Shop
         </a>
-        <NavLink className="navLink2" to="/contact" scroll={scrollWithOffset}>
+        <NavLink onClick={()=>props.onSideBarClose()} className="navLink2" to="/contact">
           Contact
         </NavLink>
-        <NavLink className="navLink2" to="/policies" scroll={scrollWithOffset}>
+        <NavLink onClick={()=>props.onSideBarClose()} className="navLink2" to="/policies" >
           Policies
         </NavLink>
       </div>

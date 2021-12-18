@@ -5,29 +5,24 @@ import PropTypes from "prop-types";
 
 const NavBar = (props) => {
 
-  const scrollWithOffset = (element) => {
-    const yCoordinate = element.getBoundingClientRect().top;
-    window.scrollTo({ top: yCoordinate, behavior: 'smooth' }); 
-}
-
   return (
     <div id="navBar">
       <div className="bars">
         <ion-icon name="menu-outline" onClick={()=>props.onSideBarClick()}></ion-icon>
       </div>
       <div className="navMenu">
-        <HashLink className="navLink" to="/#about" scroll={scrollWithOffset}>
+        <HashLink smooth className="navLink" to="/#about" >
         About
         </HashLink>
-        <NavLink className="navLink" to="/gallery">
+        <HashLink smooth className="navLink" to="/gallery/#galleryTop">
           Gallery
-        </NavLink>
-        <HashLink className="navLink" to="/#faq" scroll={scrollWithOffset}>
+        </HashLink>
+        <HashLink smooth className="navLink" to="/#faq" >
           FAQ
         </HashLink>
-        <NavLink className="navLink" to="/">
+        <HashLink smooth className="navLink" to="/#mainHeader">
           <h1>logo</h1>
-        </NavLink>
+        </HashLink>
         <a
           className="navLink"
           href="https://swampwitchtattoos.bigcartel.com/"

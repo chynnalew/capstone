@@ -14,7 +14,7 @@ body {
 }
 
 .sectionHeader {
-  padding-top: 60px;
+  padding-top: 100px;
   font-family: "minster1";
   font-weight: 100;
   font-size: 5vw;
@@ -89,7 +89,6 @@ body {
   justify-content: center;
   padding: 0.5rem calc((100vw-1000px)/2);
   z-index: 990;
-  animation: fadeIn 5.5s;
   border-bottom: 3px solid goldenrod;
   position:fixed
 }

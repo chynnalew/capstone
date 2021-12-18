@@ -57,6 +57,7 @@
   completely redoing navbar. making sticky to top, adding logo placeholder, attempting to path with react-router-dom
   (the page was looking a bit too much like a basic react dev portfolio with only smooth scroll)
   UPDATE! Got the new navbar working with react-router-dom and react-router-hash-link. The latter allows for hash navigation after route render and contains a scroll (for use with custom functions) :D
-3:00pm - 4:45pm
+3:00pm - 4:50pm
   working on small media scaling. add new css for small media view ports, add expanding side navigation bar for small media
   WIP:struggling with expanding navbar for small media
+4:45pm realized hash scroll isn't working properly again TT^TT works when a component is rendered on click, but not when the component is already rendered onClick
