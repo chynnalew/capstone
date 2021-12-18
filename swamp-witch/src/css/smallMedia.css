@@ -13,5 +13,8 @@
   .navMenu{
     display: none;
   }
+  .navBarLogo{
+    display:none;
+  }
 
 }

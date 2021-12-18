@@ -64,3 +64,10 @@
   realized hash scroll isn't working properly again TT^TT works when a component is rendered on click, but not when the component is already rendered onClick
 4:45-5:05pm
   fixed hash scroll for real this time! looking into animated route changes
+
+////////////////////////////////////
+
+sat 12/18
+12:30pm-1:30pm
+  add logo to navbar. Had trouble centering without cutting off the top of the image
+
