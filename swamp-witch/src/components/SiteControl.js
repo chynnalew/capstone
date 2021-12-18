@@ -8,9 +8,9 @@ import Gallery from "./Galleries/Gallery";
 import Lightbox from "./Galleries/Lightbox";
 import { flash } from "./Galleries/Flash";
 import { pets } from "./Galleries/Pets";
-import NavBar from './HomeComponents/NavBar/NavBar';
-import SideBar from './HomeComponents/NavBar/SideBar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import NavBar from "./HomeComponents/NavBar/NavBar";
+import SideBar from "./HomeComponents/NavBar/SideBar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 class SiteControl extends React.Component {
   constructor(props) {
@@ -27,12 +27,13 @@ class SiteControl extends React.Component {
   }
 
   handleSideBarClick = () => {
-    this.setState({sidebarOpen: true})
-  }
+    this.setState({ sidebarOpen: true });
+  };
 
   handleSideBarClose = () => {
-    this.setState({ sidebarOpen: false})
-  }
+    this.setState({ sidebarOpen: false });
+    console.log('closed')
+  };
 
   handleTattoosGalleryClick = () => {
     this.setState({
@@ -82,47 +83,65 @@ class SiteControl extends React.Component {
   render() {
     let album;
     let navComponent;
-    
+
     if (this.state.tattooGalleryVisible) {
-      album = tattoos
+      album = tattoos;
     } else if (this.state.flashGalleryVisible) {
-      album = flash
+      album = flash;
     } else if (this.state.petGalleryVisible) {
-      album = pets
-    } 
+      album = pets;
+    }
     if (!this.state.sidebarOpen) {
-      navComponent =
+      navComponent = (
         <NavBar
-        onTattooClick={this.handleTattoosGalleryClick}
-        onFlashClick={this.handleFlashGalleryClick}
-        onPetClick={this.handlePetGalleryClick}
-        onSideBarClick={this.handleSideBarClick} />
+          onTattooClick={this.handleTattoosGalleryClick}
+          onFlashClick={this.handleFlashGalleryClick}
+          onPetClick={this.handlePetGalleryClick}
+          onSideBarClick={this.handleSideBarClick}
+        />
+      );
     }
     if (this.state.sidebarOpen) {
-      navComponent = <SideBar onSideBarClose={this.handleSideBarClose}/>
+      navComponent = (
+        <SideBar
+          onTattooClick={this.handleTattoosGalleryClick}
+          onFlashClick={this.handleFlashGalleryClick}
+          onPetClick={this.handlePetGalleryClick}
+          onSideBarClose={this.handleSideBarClose}
+        />
+      );
     }
-    
-    let currentlyVisibleState = 
+
+    let currentlyVisibleState = (
       <Router>
         {navComponent}
         <Routes>
-          <Route path='/' exact element={
-            <React.Fragment>
-              <Header/>
-              <About />
-              <FAQ />
-              <Location />
-            </React.Fragment>
-          }/>
-          <Route path='/gallery' exact element={<Gallery onGalleryImageClick={this.handleGalleryImageClick}
-            photos={album} />}/>
+          <Route
+            path="/"
+            exact
+            element={
+              <React.Fragment>
+                <Header />
+                <About />
+                <FAQ />
+                <Location />
+              </React.Fragment>
+            }
+          />
+          <Route
+            path="/gallery"
+            exact
+            element={
+              <Gallery
+                onGalleryImageClick={this.handleGalleryImageClick}
+                photos={album}
+              />
+            }
+          />
         </Routes>
       </Router>
-    return (
-      <div>
-        {currentlyVisibleState}
-      </div>
     );
+    return <div>{currentlyVisibleState}</div>;
   }
 }
 

@@ -70,4 +70,5 @@
 sat 12/18
 12:30pm-1:30pm
   add logo to navbar. Had trouble centering without cutting off the top of the image
-
+1:30-2:30pm
+  add dropdown (ended up making a second div outside of the flexbox, aligning it under the gallery text, then using setState hook to show and hide the element)

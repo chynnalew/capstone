@@ -196,7 +196,19 @@ body {
 .navLink2:hover {
   color: goldenRod;
 }
-
+.smaller{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bebas Neue";
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+  font-size:5vw;
+  color: rgb(139, 139, 139);
+}
 /* ABOUT STYLES */
 
 #about {
