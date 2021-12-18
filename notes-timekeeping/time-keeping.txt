@@ -60,4 +60,7 @@
 3:00pm - 4:50pm
   working on small media scaling. add new css for small media view ports, add expanding side navigation bar for small media
   WIP:struggling with expanding navbar for small media
-4:45pm realized hash scroll isn't working properly again TT^TT works when a component is rendered on click, but not when the component is already rendered onClick
+4:45pm 
+  realized hash scroll isn't working properly again TT^TT works when a component is rendered on click, but not when the component is already rendered onClick
+4:45-5:05pm
+  fixed hash scroll for real this time! looking into animated route changes
