@@ -1,8 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
+import PropTypes from "prop-types";
 
-const NavBar = () => {
+const NavBar = (props) => {
 
   const scrollWithOffset = (element) => {
     const yCoordinate = element.getBoundingClientRect().top;
@@ -12,13 +13,13 @@ const NavBar = () => {
   return (
     <div id="navBar">
       <div className="bars">
-        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="menu-outline" onClick={()=>props.onSideBarClick()}></ion-icon>
       </div>
       <div className="navMenu">
         <HashLink className="navLink" to="/#about" scroll={scrollWithOffset}>
         About
         </HashLink>
-        <NavLink className="navLink" to="/gallery" scroll={scrollWithOffset}>
+        <NavLink className="navLink" to="/gallery">
           Gallery
         </NavLink>
         <HashLink className="navLink" to="/#faq" scroll={scrollWithOffset}>
@@ -34,15 +35,20 @@ const NavBar = () => {
         >
           Shop
         </a>
-        <NavLink className="navLink" to="/contact" scroll={scrollWithOffset}>
+        <NavLink className="navLink" to="/contact" >
           Contact
         </NavLink>
-        <NavLink className="navLink" to="/policies" scroll={scrollWithOffset}>
+        <NavLink className="navLink" to="/policies" >
           Policies
         </NavLink>
       </div>
     </div>
   );
 };
+
+NavBar.propTypes = {
+  onSideBarClick: PropTypes.func,
+
+}
 
 export default NavBar;

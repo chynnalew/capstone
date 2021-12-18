@@ -9,6 +9,7 @@ import Lightbox from "./Galleries/Lightbox";
 import { flash } from "./Galleries/Flash";
 import { pets } from "./Galleries/Pets";
 import NavBar from './HomeComponents/NavBar/NavBar';
+import SideBar from './HomeComponents/NavBar/SideBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 class SiteControl extends React.Component {
@@ -20,8 +21,17 @@ class SiteControl extends React.Component {
       petGalleryVisible: false,
       lightboxVisible: false,
       contactVisible: false,
+      sidebarOpen: false,
       currentImage: [],
     };
+  }
+
+  handleSideBarClick = () => {
+    this.setState({sidebarOpen: true})
+  }
+
+  handleSideBarClose = () => {
+    this.setState({ sidebarOpen: false})
   }
 
   handleTattoosGalleryClick = () => {
@@ -71,6 +81,7 @@ class SiteControl extends React.Component {
 
   render() {
     let album;
+    let navComponent;
     
     if (this.state.tattooGalleryVisible) {
       album = tattoos
@@ -79,13 +90,16 @@ class SiteControl extends React.Component {
     } else if (this.state.petGalleryVisible) {
       album = pets
     } 
+    if (!this.state.sidebarOpen) {
+      navComponent = <NavBar onSideBarClick={this.handleSideBarClick}/>
+    }
+    if (this.state.sidebarOpen) {
+      navComponent = <SideBar onSideBarClose={this.handleSideBarClose}/>
+    }
     
     let currentlyVisibleState = 
       <Router>
-        <NavBar
-        onTattoosGalleryClick={this.handleTattoosGalleryClick}
-        onFlashGalleryClick={this.handleFlashGalleryClick}
-          onPetGalleryClick={this.handlePetGalleryClick} />
+        {navComponent}
         <Routes>
           <Route path='/' exact element={
             <React.Fragment>
@@ -99,28 +113,6 @@ class SiteControl extends React.Component {
             photos={album} />}/>
         </Routes>
       </Router>
-
-    if (this.state.lightboxVisible) {
-      currentlyVisibleState = (
-        <React.Fragment>
-        <Header />
-        <NavBar
-          state={this.state}
-          onMainComponentsClick={this.handleMainComponentsClick}
-          onTattoosGalleryClick={this.handleTattoosGalleryClick}
-          onFlashGalleryClick={this.handleFlashGalleryClick}
-          onPetGalleryClick={this.handlePetGalleryClick}
-          onContactClick={this.handleContactClick}
-        />
-        <About />
-        <FAQ />
-        <Gallery onGalleryImageClick={this.handleGalleryImageClick}
-          photos={album} />
-        <Lightbox image={this.state.currentImage[0]} />
-        <Location />
-      </React.Fragment>
-      );
-    }
     return (
       <div>
         {currentlyVisibleState}
