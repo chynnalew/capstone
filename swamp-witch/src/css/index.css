@@ -83,6 +83,15 @@ body {
   width: 100vw;
   justify-content: center;
 }
+.dropdown{
+  display: inline-block;
+  z-index: 21000;
+  position: fixed;
+  margin-right: 49vw;
+  background:black;
+  border-bottom:3px solid goldenrod;
+  top:50px;
+}
 .logoWrap {
   z-index: 21000;
   position: fixed;
@@ -96,6 +105,7 @@ body {
   width: 9vw;
   border: 5px solid goldenrod;
   border-radius: 2px;
+  top:0;
   position: absolute;
 }
 .navBarLogo:hover {
@@ -147,6 +157,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
 
 /* SIDEBAR STYLES */
 #sidebar {
@@ -257,7 +268,6 @@ body {
 }
 
 /* GALLERY STYLES */
-
 #gallery {
   padding: 10px;
   display: flex;

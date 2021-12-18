@@ -91,7 +91,12 @@ class SiteControl extends React.Component {
       album = pets
     } 
     if (!this.state.sidebarOpen) {
-      navComponent = <NavBar onSideBarClick={this.handleSideBarClick}/>
+      navComponent =
+        <NavBar
+        onTattooClick={this.handleTattoosGalleryClick}
+        onFlashClick={this.handleFlashGalleryClick}
+        onPetClick={this.handlePetGalleryClick}
+        onSideBarClick={this.handleSideBarClick} />
     }
     if (this.state.sidebarOpen) {
       navComponent = <SideBar onSideBarClose={this.handleSideBarClose}/>
@@ -103,7 +108,7 @@ class SiteControl extends React.Component {
         <Routes>
           <Route path='/' exact element={
             <React.Fragment>
-              <Header />
+              <Header/>
               <About />
               <FAQ />
               <Location />
