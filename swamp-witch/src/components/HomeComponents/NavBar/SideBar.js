@@ -12,7 +12,7 @@ const SideBar = (props) => {
   if (showDrop) {
   return (
     <div id="sideBar">
-      <div className="closeIcon">
+      <div className="closeIcon" onClick={() => props.onSideBarClose()}>
         <ion-icon name="close-circle-outline"></ion-icon>
       </div>
       <div className="navMenu2">
@@ -102,7 +102,7 @@ const SideBar = (props) => {
   } else {
     return (
       <div id="sideBar">
-        <div className="closeIcon">
+        <div className="closeIcon" onClick={() => props.onSideBarClose()}>
           <ion-icon name="close-circle-outline"></ion-icon>
         </div>
         <div className="navMenu2">

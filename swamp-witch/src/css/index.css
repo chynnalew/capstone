@@ -12,6 +12,9 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
 }
+body:hover{
+  cursor: default;
+}
 
 .sectionHeader {
   padding-top: 100px;
@@ -20,6 +23,10 @@ body {
   font-size: 5vw;
   text-align: center;
   text-shadow: 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px;
+}
+
+ion-icon:hover {
+  cursor:pointer;
 }
 
 /* HEADER STYLES */
@@ -209,6 +216,12 @@ body {
   font-size:5vw;
   color: rgb(139, 139, 139);
 }
+
+.closeIcon{
+  margin-left:95%;
+  margin-top: 3%;
+  font-size: 20px;
+}
 /* ABOUT STYLES */
 
 #about {
@@ -256,6 +269,10 @@ body {
   padding: 10px;
   border-left: 3px solid rgb(154, 185, 218);
   background-color: rgb(39, 48, 58);
+}
+
+.question:hover{
+  cursor: pointer;
 }
 
 /* LOCATION STYLING */
