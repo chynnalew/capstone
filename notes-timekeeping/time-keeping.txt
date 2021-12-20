@@ -75,3 +75,5 @@ sat 12/18
 2:30-2:50
   add sidebar dropdown
   -- refactor later? weird skip thing happening
+2:50-3:05pm 
+  add click functionality to close sidebar

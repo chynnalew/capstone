@@ -5,7 +5,8 @@ import FAQ from "./FAQ/FAQ";
 import Location from "./HomeComponents/Location";
 import { tattoos } from "./Galleries/Tattoos";
 import Gallery from "./Galleries/Gallery";
-import Lightbox from "./Galleries/Lightbox";
+import Contact from './Contact';
+import Policies from './Policies';
 import { flash } from "./Galleries/Flash";
 import { pets } from "./Galleries/Pets";
 import NavBar from "./HomeComponents/NavBar/NavBar";
@@ -111,9 +112,9 @@ class SiteControl extends React.Component {
         />
       );
     }
-
-    let currentlyVisibleState = (
-      <Router>
+    return(
+    <div>
+     <Router basename='capstone'>
         {navComponent}
         <Routes>
           <Route
@@ -138,11 +139,20 @@ class SiteControl extends React.Component {
               />
             }
           />
+          <Route
+            path="/contact"
+            element={
+              <Contact />
+            } />
+            <Route
+              path="/policies"
+              element={
+              <Policies />
+            } />
         </Routes>
       </Router>
-    );
-    return <div>{currentlyVisibleState}</div>;
-  }
+    </div>
+    )}
 }
 
 export default SiteControl;

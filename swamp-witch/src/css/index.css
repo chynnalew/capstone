@@ -320,3 +320,13 @@ ion-icon:hover {
   box-shadow: 0 0 20px rgb(151, 118, 33), 0 0 25px black, 0 0 30px black,
     0 0 40px black;
 }
+
+/*CONTACT STYLES */
+#contact {
+  text-align: center;
+}
+
+/*POLICIES STYLES */
+#policies {
+  text-align: center;
+}

@@ -112,6 +112,7 @@ const NavBar = (props) => {
 };
 
 NavBar.propTypes = {
+  onContactClick: PropTypes.func,
   onSideBarClick: PropTypes.func,
   onTattooClick: PropTypes.func,
   onFlashClick: PropTypes.func,
