@@ -77,3 +77,16 @@ sat 12/18
   -- refactor later? weird skip thing happening
 2:50-3:05pm 
   add click functionality to close sidebar
+
+  /////////////////////////
+
+Monday, Dec 20th
+
+1:00-1:30pm 
+  update pages to display "work in progress", deploy to gh-pages (i put the gh-pages on my internship apps. gotta have something to show!)
+1:30pm-2:45pm 
+  attempting to use email js to create contact form
+2:45pm 
+  looking into using formspark instead
+  https://www.youtube.com/watch?v=T3NHNuD60h4
+  https://formspark.io/for/react/

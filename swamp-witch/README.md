@@ -11,6 +11,7 @@
 * React
 * CSS
 * HTML
+* email js
 
 ## Description
 This application was created as a main portfolio/ homepage for a local tattoo artist
@@ -49,7 +50,15 @@ Components:
 
 ## Setup/Installation Requirements
 
+#### This application requires a Formspark account
+* visit [Formspark](https://formspark.io/) to obtain a form id
+
 * Download or clone [this](https://github.com/chynnalew/capstone) repository to your local machine
+* create a .env file in the root project directory (capstone/swamp-witch)
+* add the following code to the .env file, replacing YOUR_FORM_ID with your unique id provided by Formspark:
+```
+REACT_APP_FORM_ID = 'YOUR_FORM_ID'
+```
 * Open the swamp-witch/ project directory in the terminal
 * Run the command '$ npm install' to install the needed plugins and packages
 * Open the application by running the command '$ npm run start'.

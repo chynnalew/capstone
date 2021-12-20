@@ -325,6 +325,18 @@ ion-icon:hover {
 #contact {
   text-align: center;
 }
+#contact input {
+  width: 600px;
+}
+#contact textarea {
+  height: 10em;
+  width: 600px;
+}
+
+div[role='alert'] {
+  color: red;
+  margin-top: 1em;
+}
 
 /*POLICIES STYLES */
 #policies {
