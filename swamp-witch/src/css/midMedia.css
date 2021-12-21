@@ -1,4 +1,10 @@
 @media screen and (max-width: 1023px) {
+  /*GLOBAL*/
+  .sectionHeader {
+    padding:0 0 30px 0;
+    margin:0;
+    font-size: 7vw;
+  }
   /*NAVBAR*/
   #navBar {
     height: 50px;
@@ -8,6 +14,9 @@
   }
   .logoWrap {
     margin-right: 12vw;
+  }
+  .dropdown{
+    margin-right: 45vw;
   }
 
   /*HEADER*/
@@ -22,7 +31,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 80px;
+    padding: 90px;
     
   }
   .victoria {
@@ -37,5 +46,16 @@
     margin: 0;
     display: block;
     text-align: center;
+  }
+
+  /*FAQ*/
+  #faq{
+    padding: 0;
+    padding:60px
+  }
+
+  /*LOCATION*/
+  #location {
+    padding:70px
   }
 }
