@@ -95,3 +95,10 @@ Monday, Dec 20th
   Career services meeting
 4:10-4:35pm 
   continue working on contact form- successfully captures and sends email with form inputs!
+
+////////////////////////////////////
+
+Tuesday 12/21
+
+9:00am - 9:40am
+  update sidebar styling for small media screens, fix close button positioning
