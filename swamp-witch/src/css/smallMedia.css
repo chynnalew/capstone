@@ -5,9 +5,10 @@
     position:absolute;
     top:0;
     right:0;
-    transform: translate(-100%, 75%);
+    transform: translate(-100%, 25%);
     font-size: 1.8 rem;
     cursor: pointer;
+    
   }
   .navMenu{
     display: none;
@@ -15,9 +16,37 @@
   .navBarLogo{
     display:none;
   }
+  #navBar {
+    height: 40px;
+    padding: 0;
+  }
   /*SIDEBAR*/
   .navMenu2{
-    grid-template-rows: repeat(6, 60px);
-    font-size: 20rem;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  align-items: center;
+    font-size: 30rem;
+    line-height: 16%;
+    height:100vh;
+  }
+  .closeIcon{
+    top:0;
+    margin:0;
+    padding:0;
+    position:fixed;
+    z-index:4000;
+    width: 100vw;
+    height:40px;
+    background-color: black
+  }
+  .iconInner{
+    text-align: right;
+    align-items: right;
+  }
+  .closeIcon ion-icon{
+    padding-left:90%;
+    padding-top:10px;
   }
 }

@@ -12,7 +12,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
 }
-body:hover{
+body:hover {
   cursor: default;
 }
 
@@ -22,11 +22,12 @@ body:hover{
   font-weight: 100;
   font-size: 5vw;
   text-align: center;
-  text-shadow: 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px;
+  text-shadow: 0 0 4px #b49a45, 0 0 4px rgb(119, 102, 56),
+    0 0 4px rgb(119, 102, 56), 0 0 4px;
 }
 
 ion-icon:hover {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 /* HEADER STYLES */
@@ -58,9 +59,11 @@ ion-icon:hover {
   font-weight: 100;
   font-size: 10vw;
   color: rgb(231, 231, 231);
-  text-shadow: 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634,
-    0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634,
-    0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 4px #7d6634, 0 0 15vw black,
+  text-shadow: 0 0 4px rgb(119, 102, 56), 0 0 4px rgb(119, 102, 56),
+    0 0 4px rgb(119, 102, 56), 0 0 4px rgb(119, 102, 56),
+    0 0 4px rgb(119, 102, 56), 0 0 4px rgb(119, 102, 56),
+    0 0 4px rgb(119, 102, 56), 0 0 4px rgb(119, 102, 56),
+    0 0 4px rgb(119, 102, 56), 0 0 4px rgb(119, 102, 56), 0 0 15vw black,
     0 0 10vw black, 0 0 7vw black, 0 0 5vw black;
 }
 
@@ -90,29 +93,28 @@ ion-icon:hover {
   width: 100vw;
   justify-content: center;
 }
-.dropdown{
+.dropdown {
   display: inline-block;
   z-index: 21000;
   position: fixed;
   margin-right: 49vw;
-  background:black;
-  border-bottom:3px solid goldenrod;
-  top:50px;
+  background: black;
+  border-bottom: 3px solid rgb(114, 98, 54);
+  top: 50px;
 }
 .logoWrap {
   z-index: 21000;
   position: fixed;
   display: inline-block;
   margin: auto;
-  margin-right:9vw
-  
+  margin-right: 9vw;
 }
 .navBarLogo {
   z-index: 20000;
   width: 9vw;
-  border: 5px solid goldenrod;
+  border: 5px solid rgb(114, 98, 54);
   border-radius: 2px;
-  top:0;
+  top: 0;
   position: absolute;
 }
 .navBarLogo:hover {
@@ -128,9 +130,9 @@ ion-icon:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem calc((100vw-1000px) / 2);
+  padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 990;
-  border-bottom: 3px solid goldenrod;
+  border-bottom: 3px solid rgb(114, 98, 54);
   position: fixed;
 }
 
@@ -149,7 +151,7 @@ ion-icon:hover {
 }
 
 .navLink:hover {
-  color: goldenRod;
+  color: rgb(114, 98, 54);
 }
 
 .bars {
@@ -164,7 +166,6 @@ ion-icon:hover {
   align-items: center;
   justify-content: space-between;
 }
-
 
 /* SIDEBAR STYLES */
 #sidebar {
@@ -201,9 +202,9 @@ ion-icon:hover {
   cursor: pointer;
 }
 .navLink2:hover {
-  color: goldenRod;
+  color: rgb(114, 98, 54);
 }
-.smaller{
+.smaller {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -213,13 +214,13 @@ ion-icon:hover {
   transition: 0.2s ease-in-out;
   text-decoration: none;
   cursor: pointer;
-  font-size:5vw;
+  font-size: 5vw;
   color: rgb(139, 139, 139);
 }
 
-.closeIcon{
-  margin-left:95%;
-  margin-top: 3%;
+.closeIcon {
+  padding-left: 95%;
+  padding-top: 3%;
   font-size: 20px;
 }
 /* ABOUT STYLES */
@@ -245,6 +246,7 @@ ion-icon:hover {
 #faq {
   padding: 10px;
   background-color: #7f90b138;
+  padding-bottom: 150px;
 }
 
 .faqItem {
@@ -257,7 +259,7 @@ ion-icon:hover {
 #faq a {
   font-size: 2vw;
   text-decoration: none;
-  color: goldenrod;
+  color: rgb(114, 98, 54);
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -271,7 +273,7 @@ ion-icon:hover {
   background-color: rgb(39, 48, 58);
 }
 
-.question:hover{
+.question:hover {
   cursor: pointer;
 }
 
@@ -291,9 +293,12 @@ ion-icon:hover {
   text-align: center;
   text-decoration: none;
 }
-.mapText a:link, .mapText a:visited,  .mapText a:hover, .mapText a:active {
-    color: white;
-    text-decoration: none;
+.mapText a:link,
+.mapText a:visited,
+.mapText a:hover,
+.mapText a:active {
+  color: white;
+  text-decoration: none;
 }
 
 /* GALLERY STYLES */
@@ -333,7 +338,7 @@ ion-icon:hover {
   width: 600px;
 }
 
-div[role='alert'] {
+div[role="alert"] {
   color: red;
   margin-top: 1em;
 }

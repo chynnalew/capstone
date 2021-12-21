@@ -27,7 +27,7 @@ Components:
 Style guide:
 - logo font: https://www.1001freefonts.com/minster.font
 -black and white (main theme)
-  - gold = main color (hex #7d6634)
+  - gold = main color (hex rgb(119, 102, 56))
   - blue = secondary color (hex )
   - links = blue? (bold and gold on hover) 
   - black background
