@@ -342,3 +342,65 @@ ion-icon:hover {
 #policies {
   text-align: center;
 }
+
+/*CONTACT STYLES*/
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contactForm {
+  display:block;
+  padding-bottom: 30px;
+  text-align: left;
+  padding: 30px;
+  background-color:#7f90b138;
+}
+#contact .sectionHeader {
+  margin-bottom: 0;
+
+}
+.formLabels{
+  text-align: left;
+}
+input, textarea, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 80%;
+  background-color: rgb(60, 115, 151);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(114, 98, 54);
+}
+
+.email:link, .email:visited, .email:active {
+  color: rgb(156, 131, 61);
+  text-decoration: none;
+  font-weight: 500;
+}
+.email:hover{
+  font-size: larger;
+  color:  rgb(64, 147, 202);
+}
+.agree{
+  width:90%;
+}
+input[type=checkbox] {
+  max-width: 25px;
+
+}

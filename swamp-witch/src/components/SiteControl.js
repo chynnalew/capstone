@@ -33,7 +33,6 @@ class SiteControl extends React.Component {
 
   handleSideBarClose = () => {
     this.setState({ sidebarOpen: false });
-    console.log('closed')
   };
 
   handleTattoosGalleryClick = () => {
