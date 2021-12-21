@@ -7,7 +7,16 @@ const Contact = () => {
   const formId = process.env.REACT_APP_FORM_ID;
   const formSparkUrl = `https://submit-form.com/${formId}`;
 
+  const recaptchaKey = process.env.REACT_APP_RECAPTCHA_KEY;
+  const recaptchaRef = React.useRef();
+  
   const [formState, setFormState] = React.useState();
+  const [rcToken, setRcToken] = React.useState();
+
+  const updateRecaptchaToken = (token) => {
+    setRcToken(token);
+  }
+
 
   const inputFormControl = (event) => {
     const { id, value } = event.target;
@@ -98,9 +107,16 @@ const Contact = () => {
         <br />
         <br />
         <div className='agree'>
-        <input class='checkBox' type='checkbox' required='required'></input>
+          <input class='checkBox' type='checkbox' required='required'></input>
         <label class='checkLabel'>I have read and agree to the <NavLink className='email' target='_blank' to='/policies'>shop policies</NavLink></label>
         </div>
+
+        <ReCAPTCHA className='reCaptcha'
+          ref={recaptchaRef}
+          sitekey={recaptchaKey}
+          onChange={updateRecaptchaToken}
+        />
+
         <input type="submit" value="Send" />
       </form>
     </div>

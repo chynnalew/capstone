@@ -50,14 +50,17 @@ Components:
 
 ## Setup/Installation Requirements
 
-#### This application requires a Formspark account
+#### This application requires a Formspark account and a google reCaptcha key
 * visit [Formspark](https://formspark.io/) to obtain a form id
+* visit [Google](https://www.google.com/recaptcha/admin) to set up a v2 account and obtain your keys
+    * in your formspark settings, select Google reCaptcha v2 in the spam protection field and enter your Google ReCAPTCHA secret key
 
 * Download or clone [this](https://github.com/chynnalew/capstone) repository to your local machine
 * create a .env file in the root project directory (capstone/swamp-witch)
-* add the following code to the .env file, replacing YOUR_FORM_ID with your unique id provided by Formspark:
+* add the following code to the .env file, replacing YOUR_FORM_ID with your unique id provided by Formspark, and YOUR_SITE_KEY with your site key provided by Google ReCAPTCHA:
 ```
 REACT_APP_FORM_ID = 'YOUR_FORM_ID'
+REACT_APP_RECAPTCHA_KEY = 'YOUR_SITE_KEY'
 ```
 * Open the swamp-witch/ project directory in the terminal
 * Run the command '$ npm install' to install the needed plugins and packages
