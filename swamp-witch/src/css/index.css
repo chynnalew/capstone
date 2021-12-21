@@ -63,8 +63,8 @@ ion-icon:hover {
     0 0 4px rgb(119, 102, 56), 0 0 4px rgb(119, 102, 56),
     0 0 4px rgb(119, 102, 56), 0 0 4px rgb(119, 102, 56),
     0 0 4px rgb(119, 102, 56), 0 0 4px rgb(119, 102, 56),
-    0 0 4px rgb(119, 102, 56), 0 0 4px rgb(119, 102, 56), 0 0 15vw black,
-    0 0 10vw black, 0 0 7vw black, 0 0 5vw black;
+    0 0 4px rgb(119, 102, 56), 0 0 4px rgb(119, 102, 56), 0 0 15vw black, 0 0 13vw black, 0 0 12vw black,
+    0 0 10vw black, 0 0 7vw black, 0 0 5vw black, 0 0 3vw black, 0 0 2vw black;
 }
 
 @keyframes fadeIn {
@@ -130,7 +130,7 @@ ion-icon:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem calc((100vw - 1000px) / 2);
+  padding: 0.5rem calc((100vw- 1000px) / 2);
   z-index: 990;
   border-bottom: 3px solid rgb(114, 98, 54);
   position: fixed;

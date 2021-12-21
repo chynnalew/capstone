@@ -104,3 +104,5 @@ Tuesday 12/21
   update sidebar styling for small media screens, fix close button positioning
 9:40am - 9:55am
   scale header component for small devices
+9:55-10:10am
+  style navbar for med devices
