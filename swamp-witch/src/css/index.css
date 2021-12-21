@@ -338,11 +338,6 @@ ion-icon:hover {
   width: 600px;
 }
 
-div[role="alert"] {
-  color: red;
-  margin-top: 1em;
-}
-
 /*POLICIES STYLES */
 #policies {
   text-align: center;

@@ -110,3 +110,6 @@ Tuesday 12/21
   break time!
 10:30am - 10:40 am
   style midMedia header section
+10:40 am - 11:15am
+  finish preliminary styling for splash page components midMedia
+
