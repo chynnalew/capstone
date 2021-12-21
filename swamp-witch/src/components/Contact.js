@@ -51,6 +51,8 @@ const Contact = () => {
   return (
     <div id="contact">
       <h1 className="sectionHeader">Contact Information</h1>
+      <h1 style={{ color: 'red' }}>THIS SITE IS UNDER DEVELOPMENT
+      <br/> the contact form is not currently active</h1>
       <p>To schedule a consultation, please send an email to:
         <br />
         <a className='email' href="mailto: swampwitchtattoos@gmail.com">swampwitchtattoos@gmail.com</a>

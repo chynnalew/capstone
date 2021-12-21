@@ -50,7 +50,7 @@ Components:
 
 ## Setup/Installation Requirements
 
-#### This application requires a Formspark account and a google reCaptcha key
+### This application requires a Formspark account and a google reCaptcha key
 * visit [Formspark](https://formspark.io/) to obtain a form id
 * visit [Google](https://www.google.com/recaptcha/admin) to set up a v2 account and obtain your keys
     * in your formspark settings, select Google reCaptcha v2 in the spam protection field and enter your Google ReCAPTCHA secret key

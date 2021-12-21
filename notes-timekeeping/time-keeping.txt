@@ -114,4 +114,5 @@ Tuesday 12/21
   finish preliminary styling for splash page components midMedia
 11:30-1:00pm
   job interview and lunchtime
-
+1:00pm - 2:45pm 
+  add recaptcha, update readme.md
