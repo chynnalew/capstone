@@ -1,76 +1,78 @@
 import React from "react";
-import axios from 'axios';
+import axios from "axios";
 
 const Contact = () => {
   const formId = process.env.REACT_APP_FORM_ID;
-  const formSparkUrl = `https://submit-form.com/${formId}`
+  const formSparkUrl = `https://submit-form.com/${formId}`;
 
-  const [formState, useFormState] = React.useState();
+  const [formState, setFormState] = React.useState();
 
-  const submitForm = async(event) => {
+  const inputFormControl = (event) => {
+    const { id, value } = event.target;
+    const formKey = id;
+    const updatedFormState = { ...formState };
+    updatedFormState[formKey] = value;
+    setFormState(updatedFormState);
+  };
+
+  const submitForm = async (event) => {
     event.preventDefault();
     await postSubmission();
-  }
+  };
 
   const postSubmission = async () => {
     const payload = {
-      message: 'test form'
-    }
+      name: formState.name,
+      email: formState.email,
+      description: formState.description,
+      placement: formState.placement,
+      size: formState.size,
+      color: formState.color,
+      budget: formState.budget,
+    };
     try {
       const result = await axios.post(formSparkUrl, payload);
       console.log(result);
     } catch (error) {
       console.log(error);
     }
-  }
+  };
   return (
     <div id="contact">
       <h1 className="sectionHeader">Contact</h1>
       <p>work in progress</p>
       <form id="contact-form" onSubmit={submitForm}>
         <input
+          onChange={inputFormControl}
           type="text"
-          name="name"
+          id="name"
           placeholder="Your Name"
-          required='required'
+          required="required"
         />
         <br />
         <input
+          onChange={inputFormControl}
           type="email"
-          name="email"
+          id="email"
           placeholder="Your Email"
-          required='required'
+          required="required"
         />
         <br />
         <textarea
-          name="description"
+          onChange={inputFormControl}
+          id="description"
           placeholder="detailed tattoo description"
-          required='required'
+          required="required"
         />
         <br />
-        <input
-          name="placement"
-          placeholder="placement"
-          required='required'
-        />
+
+        <input onChange={inputFormControl} id="placement" placeholder="placement" required="required" />
         <br />
-        <input
-          name="size"
-          placeholder="size"
-          required='required'
-        />
+        <input onChange={inputFormControl} id="size" placeholder="size" required="required" />
         <br />
-        <input
-          name="color"
-          placeholder="color"
-          required='required'
-        />
+        <input onChange={inputFormControl} id="color" placeholder="color" required="required" />
         <br />
-        <input
-          name="budget"
-          placeholder="budget"
-          required='required'
-        />
+        <input onChange={inputFormControl} id="budget" placeholder="budget" required="required" />
         <br />
         <input type="submit" value="Send" />
       </form>

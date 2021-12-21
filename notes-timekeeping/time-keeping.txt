@@ -86,7 +86,11 @@ Monday, Dec 20th
   update pages to display "work in progress", deploy to gh-pages (i put the gh-pages on my internship apps. gotta have something to show!)
 1:30pm-2:45pm 
   attempting to use email js to create contact form
-2:45pm 
+2:45pm - 3:45pm
   looking into using formspark instead
   https://www.youtube.com/watch?v=T3NHNuD60h4
   https://formspark.io/for/react/
+3:45pm- 4:10pm
+  Career services meeting
+4:10-5pm 
+  continue working on contact form
