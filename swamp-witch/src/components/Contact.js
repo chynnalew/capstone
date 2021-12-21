@@ -78,6 +78,11 @@ const Contact = () => {
       </form>
     </div>
   );
+  // return (
+  //   <div id="contact">
+  //     <h1 className="sectionHeader">Contact</h1>
+  //     <p>work in progress</p>
+  //     </div>)
 };
 
 export default Contact;

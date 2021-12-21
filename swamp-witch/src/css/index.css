@@ -283,17 +283,17 @@ ion-icon:hover {
   justify-content: center;
   align-content: center;
 }
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
-  width: 100%;
-}
+
 .mapStyle {
   width: 300px;
 }
 .mapText {
-  text-align: left;
+  text-align: center;
+  text-decoration: none;
+}
+.mapText a:link, .mapText a:visited,  .mapText a:hover, .mapText a:active {
+    color: white;
+    text-decoration: none;
 }
 
 /* GALLERY STYLES */

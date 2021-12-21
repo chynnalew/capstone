@@ -1,5 +1,4 @@
 @media screen and (max-width:768px){
-
   /*NAVBAR*/
   .bars{
     display:block;
@@ -16,5 +15,9 @@
   .navBarLogo{
     display:none;
   }
-
+  /*SIDEBAR*/
+  .navMenu2{
+    grid-template-rows: repeat(6, 60px);
+    font-size: 20rem;
+  }
 }
