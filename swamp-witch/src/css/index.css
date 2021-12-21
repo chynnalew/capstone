@@ -280,14 +280,15 @@ ion-icon:hover {
 /* LOCATION STYLING */
 #location {
   margin-bottom: 20px;
-  padding: 10px 10vw 10px 10vw;
   text-align: center;
   justify-content: center;
   align-content: center;
 }
 
 .mapStyle {
-  width: 300px;
+  display:block;
+  width: 100vw;
+  margin:auto;
 }
 .mapText {
   text-align: center;
