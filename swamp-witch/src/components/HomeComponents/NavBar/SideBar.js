@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const SideBar = (props) => {
-  const [showDrop, setShowDrop] = React.useState(true);
+  const [showDrop, setShowDrop] = React.useState(false);
 
   const toggle = () => {
     setShowDrop(!showDrop);

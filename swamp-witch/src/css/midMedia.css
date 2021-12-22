@@ -40,7 +40,7 @@
   }
   .aboutText {
     float: none;
-    font-size: large;
+    font-size: 1.25rem;
     width: 70%;
     margin: 0;
     display: block;

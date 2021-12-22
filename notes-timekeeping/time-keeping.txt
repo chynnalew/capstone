@@ -1,3 +1,6 @@
+Friday 12/3
+  -9 hours, logged in commits
+
 Saturday 12/11
 
 7:45am - 7:50am 
@@ -118,3 +121,16 @@ Tuesday 12/21
   add recaptcha, update readme.md
 3:00-4:00pm
   -fix dropdown for phone media
+4:00pm-5:00pm
+  finish phone media scaling
+
+///////////////////////////////////
+
+Wed 12/22
+
+8am-10:30am: 
+  - interview prep
+11:00am-noon 
+  -- technical interview with Dealer Spike
+
+1:00pm back to capstone work!
