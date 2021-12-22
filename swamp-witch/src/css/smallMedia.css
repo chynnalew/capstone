@@ -37,6 +37,7 @@
   #navBar {
     height: 40px;
     padding: 0;
+    left:0;
   }
   /*SIDEBAR*/
   .navMenu2 {
@@ -72,6 +73,9 @@
     padding:0;
     margin:0;
   }
+  .navLink{
+    height:0;
+  }
 
   /*ABOUT*/
   #about {
@@ -94,5 +98,39 @@
   #location {
     padding:0;
     margin:0;
+  }
+  /*Gallery*/
+  #galleryContainer {
+    padding:30px;
+    padding-top:0;
+  }
+  #gallery img:hover {
+    transition: 0.5s;
+    transform: scale(1);
+    border: none;
+    box-shadow: none;
+  }
+  #gallery img {
+    width: 100%;
+    height:auto;
+  }
+  .imgHeader {
+    padding-bottom:0px;
+  }
+  /*CONTACT*/
+  #contact{
+    padding-top:0;
+  }
+  #contactForm {
+    width:90%;
+  }
+  #contact input, #contact textarea, #contact select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
   }
 }

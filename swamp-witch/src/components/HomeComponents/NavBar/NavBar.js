@@ -56,9 +56,9 @@ const NavBar = (props) => {
             <HashLink smooth className="navLink" to="/#faq">
               FAQ
             </HashLink>
-            <NavLink className="navLink" to="/contact">
+            <HashLink className="navLink" to="/contact/#contact">
               Contact
-            </NavLink>
+            </HashLink>
             <NavLink className="navLink" to="/policies">
               Policies
             </NavLink>
@@ -97,9 +97,9 @@ const NavBar = (props) => {
             <HashLink smooth className="navLink" to="/#faq">
               FAQ
             </HashLink>
-            <NavLink className="navLink" to="/contact">
+            <HashLink className="navLink" to="/contact/#contact">
               Contact
-            </NavLink>
+            </HashLink>
             <NavLink className="navLink" to="/policies">
               Policies
             </NavLink>

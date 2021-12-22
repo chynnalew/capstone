@@ -116,3 +116,5 @@ Tuesday 12/21
   job interview and lunchtime
 1:00pm - 2:45pm 
   add recaptcha, update readme.md
+3:00-4:00pm
+  -fix dropdown for phone media

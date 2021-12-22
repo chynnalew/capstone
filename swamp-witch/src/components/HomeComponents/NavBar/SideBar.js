@@ -82,13 +82,13 @@ const SideBar = (props) => {
         >
           Shop
         </a>
-        <NavLink
+        <HashLink
           onClick={() => props.onSideBarClose()}
           className="navLink2"
-          to="/contact"
+          to="/contact/#contact"
         >
           Contact
-        </NavLink>
+        </HashLink>
         <NavLink
           onClick={() => props.onSideBarClose()}
           className="navLink2"
@@ -136,13 +136,13 @@ const SideBar = (props) => {
           >
             Shop
           </a>
-          <NavLink
+          <HashLink
             onClick={() => props.onSideBarClose()}
             className="navLink2"
-            to="/contact"
+            to="/contact/#contact"
           >
             Contact
-          </NavLink>
+          </HashLink>
           <NavLink
             onClick={() => props.onSideBarClose()}
             className="navLink2"
