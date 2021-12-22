@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/capstone/static/css/main.5b4a7edc.chunk.css",
-    "main.js": "/capstone/static/js/main.6fe27a02.chunk.js",
-    "main.js.map": "/capstone/static/js/main.6fe27a02.chunk.js.map",
-    "runtime-main.js": "/capstone/static/js/runtime-main.8ef60f63.js",
-    "runtime-main.js.map": "/capstone/static/js/runtime-main.8ef60f63.js.map",
-    "static/js/2.7ad21635.chunk.js": "/capstone/static/js/2.7ad21635.chunk.js",
-    "static/js/2.7ad21635.chunk.js.map": "/capstone/static/js/2.7ad21635.chunk.js.map",
-    "static/js/3.fe3679de.chunk.js": "/capstone/static/js/3.fe3679de.chunk.js",
-    "static/js/3.fe3679de.chunk.js.map": "/capstone/static/js/3.fe3679de.chunk.js.map",
+    "main.css": "/capstone/static/css/main.ce786532.chunk.css",
+    "main.js": "/capstone/static/js/main.cd183029.chunk.js",
+    "main.js.map": "/capstone/static/js/main.cd183029.chunk.js.map",
+    "runtime-main.js": "/capstone/static/js/runtime-main.42293f44.js",
+    "runtime-main.js.map": "/capstone/static/js/runtime-main.42293f44.js.map",
+    "static/js/2.28c24f0a.chunk.js": "/capstone/static/js/2.28c24f0a.chunk.js",
+    "static/js/2.28c24f0a.chunk.js.map": "/capstone/static/js/2.28c24f0a.chunk.js.map",
+    "static/js/3.c8fd8c0d.chunk.js": "/capstone/static/js/3.c8fd8c0d.chunk.js",
+    "static/js/3.c8fd8c0d.chunk.js.map": "/capstone/static/js/3.c8fd8c0d.chunk.js.map",
     "index.html": "/capstone/index.html",
-    "static/css/main.5b4a7edc.chunk.css.map": "/capstone/static/css/main.5b4a7edc.chunk.css.map",
-    "static/js/2.7ad21635.chunk.js.LICENSE.txt": "/capstone/static/js/2.7ad21635.chunk.js.LICENSE.txt",
+    "static/css/main.ce786532.chunk.css.map": "/capstone/static/css/main.ce786532.chunk.css.map",
+    "static/js/2.28c24f0a.chunk.js.LICENSE.txt": "/capstone/static/js/2.28c24f0a.chunk.js.LICENSE.txt",
     "static/media/bondage.83649e13.png": "/capstone/static/media/bondage.83649e13.png",
     "static/media/butterfly-beetle.a2755a02.jpeg": "/capstone/static/media/butterfly-beetle.a2755a02.jpeg",
     "static/media/candleSpider.9033c6d4.png": "/capstone/static/media/candleSpider.9033c6d4.png",
@@ -45,9 +45,9 @@
     "static/media/victoria2.016f2b49.JPG": "/capstone/static/media/victoria2.016f2b49.JPG"
   },
   "entrypoints": [
-    "static/js/runtime-main.8ef60f63.js",
-    "static/js/2.7ad21635.chunk.js",
-    "static/css/main.5b4a7edc.chunk.css",
-    "static/js/main.6fe27a02.chunk.js"
+    "static/js/runtime-main.42293f44.js",
+    "static/js/2.28c24f0a.chunk.js",
+    "static/css/main.ce786532.chunk.css",
+    "static/js/main.cd183029.chunk.js"
   ]
 }
