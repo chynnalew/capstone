@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import PropTypes from "prop-types";
-import logo from "../../../assets/img/logo/sm-logo.JPG";
+import logo from "../../../assets/img/logo/sm-logo.png";
 
 const NavBar = (props) => {
 
