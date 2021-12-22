@@ -136,3 +136,6 @@ Wed 12/22
 1:00pm back to capstone work!
 1:00pm - 1:25pm
   -update font size for phone media questions and about 
+1:25pm - 2 pm
+  - minify images, add additional gallery images, update splash image
+  
