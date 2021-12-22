@@ -12,7 +12,7 @@ const FAQ = () => {
 
   return (
     <div className="faq" id="faq">
-      <h1 className="sectionHeader">Frequently Asked Questions</h1>
+      <h1 className="sectionHeader smallHeader">Frequently Asked Questions</h1>
       <div className="faqQuestions">
         {Data.map((q, index) => {
           return (

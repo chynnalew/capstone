@@ -172,31 +172,27 @@ ion-icon:hover {
   position: fixed;
   z-index: 999;
   height: 100vh;
-  display: grid;
   align-items: center;
   top: 0;
   left: 0;
   transition: 0.3s ease-in-out;
+  
 }
 .navMenu2 {
   z-index: 1000;
   position: fixed;
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  height: 100vh;
   width: 100%;
-  background: rgba(0, 0, 0, 0.842);
+  background: rgba(0, 0, 0, 0.925);
+  padding-bottom:60px;
 }
 .navLink2 {
   display: flex;
   align-items: center;
-  justify-content: center;
   font-size: 10vw;
   font-family: "Bebas Neue";
   text-decoration: none;
   list-style: none;
-  transition: 0.2s ease-in-out;
   text-decoration: none;
   color: rgb(60, 115, 151);
   cursor: pointer;
@@ -205,13 +201,11 @@ ion-icon:hover {
   color: rgb(114, 98, 54);
 }
 .smaller {
-  display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Bebas Neue";
   text-decoration: none;
   list-style: none;
-  transition: 0.2s ease-in-out;
   text-decoration: none;
   cursor: pointer;
   font-size: 5vw;

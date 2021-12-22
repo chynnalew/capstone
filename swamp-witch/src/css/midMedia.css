@@ -55,7 +55,8 @@
 
   /*LOCATION*/
   #location {
-    padding: 70px;
+    padding:70px 0;
+    margin:0;
   }
 
   /*Gallery*/

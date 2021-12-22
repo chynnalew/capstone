@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const SideBar = (props) => {
-  const [showDrop, setShowDrop] = React.useState(false);
+  const [showDrop, setShowDrop] = React.useState(true);
 
   const toggle = () => {
     setShowDrop(!showDrop);
@@ -29,7 +29,7 @@ const SideBar = (props) => {
             className="navLink2"
           >
             Gallery
-          </p>
+        </p>
         <HashLink
           smooth
           onClick={() => {
@@ -65,7 +65,7 @@ const SideBar = (props) => {
           to="/gallery/#galleryTop"
         >
           Pet Portraits
-        </HashLink>
+          </HashLink>
         <HashLink
           onClick={() => props.onSideBarClose()}
           smooth
