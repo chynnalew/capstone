@@ -11,7 +11,9 @@
 * React
 * CSS
 * HTML
-* email js
+* formspark
+* upload care
+*
 
 ## Description
 This application was created as a main portfolio/ homepage for a local tattoo artist
@@ -50,17 +52,19 @@ Components:
 
 ## Setup/Installation Requirements
 
-### This application requires a Formspark account and a google reCaptcha key
+### This application requires a Formspark account, a UploadCare account, and a Google reCaptcha key
 * visit [Formspark](https://formspark.io/) to obtain a form id
 * visit [Google](https://www.google.com/recaptcha/admin) to set up a v2 account and obtain your keys
     * in your formspark settings, select Google reCaptcha v2 in the spam protection field and enter your Google ReCAPTCHA secret key
+* visit [UploadCare](https://uploadcare.com/) to obtain an API key
 
 * Download or clone [this](https://github.com/chynnalew/capstone) repository to your local machine
 * create a .env file in the root project directory (capstone/swamp-witch)
-* add the following code to the .env file, replacing YOUR_FORM_ID with your unique id provided by Formspark, and YOUR_SITE_KEY with your site key provided by Google ReCAPTCHA:
+* add the following code to the .env file, replacing YOUR_FORM_ID with your unique id provided by Formspark, YOUR_SITE_KEY with your site key provided by Google ReCAPTCHA, and YOUR_UPLOADCARE_KEY with your UploadCare public API key:
 ```
 REACT_APP_FORM_ID = 'YOUR_FORM_ID'
 REACT_APP_RECAPTCHA_KEY = 'YOUR_SITE_KEY'
+REACT_APP_UPLOADCARE_KEY='YOUR_UPLOADCARE_KEY'
 ```
 * Open the swamp-witch/ project directory in the terminal
 * Run the command '$ npm install' to install the needed plugins and packages

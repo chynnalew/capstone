@@ -1,7 +1,8 @@
 import React from "react";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
-import ReCAPTCHA from 'react-google-recaptcha';
+import ReCAPTCHA from "react-google-recaptcha";
+import uploadcare from "uploadcare-widget/uploadcare.lang.en.min.js";
 
 const Contact = () => {
   const formId = process.env.REACT_APP_FORM_ID;
@@ -9,14 +10,13 @@ const Contact = () => {
 
   const recaptchaKey = process.env.REACT_APP_RECAPTCHA_KEY;
   const recaptchaRef = React.useRef();
-  
+
   const [formState, setFormState] = React.useState();
   const [rcToken, setRcToken] = React.useState();
 
   const updateRecaptchaToken = (token) => {
     setRcToken(token);
-  }
-
+  };
 
   const inputFormControl = (event) => {
     const { id, value } = event.target;
@@ -39,7 +39,7 @@ const Contact = () => {
       placement: formState.placement,
       size: formState.size,
       color: formState.color,
-      budget: formState.budget,
+      budget: formState.budget
     };
     try {
       const result = await axios.post(formSparkUrl, payload);
@@ -51,83 +51,103 @@ const Contact = () => {
   return (
     <div id="contact">
       <h1 className="sectionHeader">Contact Information</h1>
-      <h1 style={{ color: 'red' }}>THIS SITE IS UNDER DEVELOPMENT
-      <br/> the contact form is not currently active</h1>
-      <p>To schedule a consultation, please send an email to:
+      <h1 style={{ color: "red" }}>
+        THIS SITE IS UNDER DEVELOPMENT
+        <br /> the contact form is not currently active
+      </h1>
+      <p>
+        To schedule a consultation, please send an email to:
         <br />
-        <a className='email' href="mailto: swampwitchtattoos@gmail.com">swampwitchtattoos@gmail.com</a>
+        <a className="email" href="mailto: swampwitchtattoos@gmail.com">
+          swampwitchtattoos@gmail.com
+        </a>
         <br />
-        or fill out the form below.</p>
-      <form id="contactForm" onSubmit={submitForm}>
-        <label class='formLabels'>What is your name?</label>
-        <br/>
+        or fill out the form below.
+      </p>
+      <form id="contactForm" action={formSparkUrl}>
+        <label class="formLabels">What is your name?</label>
+        <br />
         <input
-          onChange={inputFormControl}
           type="text"
           id="name"
+          name='name'
           required="required"
         />
         <br />
         <br />
-        <label class='formLabels'>Email</label>
-        <br/>
+        <label class="formLabels">Email</label>
+        <br />
         <input
-          onChange={inputFormControl}
           type="email"
           id="email"
+          name='email'
           required="required"
         />
         <br />
         <br />
-        <label class='formLabels'>Describe your tattoo idea:</label>
-        <br/>
+        <label class="formLabels">Describe your tattoo idea:</label>
+        <br />
         <textarea
-          onChange={inputFormControl}
           id="description"
+          name='description'
           required="required"
         />
         <br />
         <br />
-        <label class='formLabels'>Where on your body?</label>
-        <br/>
-        <input onChange={inputFormControl} id="placement" required="required" />
+        <label class="formLabels">Where on your body?</label>
+        <br />
+        <input id="placement" name='placement' required="required" />
         <br />
         <br />
-        <label class='formLabels'>Approximate tattoo size?</label>
-        <br/>
-        <input onChange={inputFormControl} id="size" required="required" />
+        <label class="formLabels">Approximate tattoo size?</label>
+        <br />
+        <input  id="size" name='size' required="required" />
         <br />
         <br />
-        <label class='formLabels'>What are your desired colors?</label>
-        <br/>
-        <input onChange={inputFormControl} id="color" required="required" />
+        <label class="formLabels">What are your desired colors?</label>
+        <br />
+        <input id="color" name='color' required="required" />
         <br />
         <br />
-        <label class='formLabels'>What is your ideal budget?</label>
-        <br/>
-        <input onChange={inputFormControl} id="budget" required="required" />
+        <label class="formLabels">What is your ideal budget?</label>
+        <br />
+        <input id="budget" name='budget' required="required" />
         <br />
         <br />
-        <div className='agree'>
-          <input class='checkBox' type='checkbox' required='required'></input>
-        <label class='checkLabel'>I have read and agree to the <NavLink className='email' target='_blank' to='/policies'>shop policies</NavLink></label>
+        <label for="photo">Reference photos</label>
+        <br />
+        <input
+          type="hidden"
+          id="photos"
+          name="photos"
+          role="uploadcare-uploader"
+          data-multiple="true"
+          data-public-key={process.env.REACT_APP_UPLOADCARE_KEY}
+        />
+        
+        <br />
+        <br />
+        <div className="agree">
+          <input class="checkBox" type="checkbox" required="required"></input>
+          <label class="checkLabel">
+            I have read and agree to the{" "}
+            <NavLink className="email" target="_blank" to="/policies">
+              shop policies
+            </NavLink>
+          </label>
         </div>
 
-        <ReCAPTCHA className='reCaptcha'
+        <ReCAPTCHA
+          className="reCaptcha"
           ref={recaptchaRef}
           sitekey={recaptchaKey}
-          onChange={updateRecaptchaToken}
+          onChange={process.env.REACT_APP_UPLOADCARE_KEY}
         />
 
         <input type="submit" value="Send" />
       </form>
     </div>
   );
-  // return (
-  //   <div id="contact">
-  //     <h1 className="sectionHeader">Contact</h1>
-  //     <p>work in progress</p>
-  //     </div>)
 };
 
 export default Contact;

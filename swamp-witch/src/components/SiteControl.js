@@ -5,8 +5,8 @@ import FAQ from "./FAQ/FAQ";
 import Location from "./HomeComponents/Location";
 import { tattoos } from "./Galleries/Tattoos";
 import Gallery from "./Galleries/Gallery";
-import Contact from './Contact';
-import Policies from './Policies';
+import Contact from "./Contact";
+import Policies from "./Policies";
 import { flash } from "./Galleries/Flash";
 import { pets } from "./Galleries/Pets";
 import NavBar from "./HomeComponents/NavBar/NavBar";
@@ -20,10 +20,7 @@ class SiteControl extends React.Component {
       tattooGalleryVisible: true,
       flashGalleryVisible: false,
       petGalleryVisible: false,
-      lightboxVisible: false,
-      contactVisible: false,
       sidebarOpen: false,
-      currentImage: [],
     };
   }
 
@@ -40,8 +37,6 @@ class SiteControl extends React.Component {
       tattooGalleryVisible: true,
       flashGalleryVisible: false,
       petGalleryVisible: false,
-      lightboxVisible: false,
-      contactVisible: false,
     });
   };
 
@@ -50,8 +45,6 @@ class SiteControl extends React.Component {
       tattooGalleryVisible: false,
       flashGalleryVisible: true,
       petGalleryVisible: false,
-      lightboxVisible: false,
-      contactVisible: false,
     });
   };
 
@@ -60,23 +53,6 @@ class SiteControl extends React.Component {
       tattooGalleryVisible: false,
       flashGalleryVisible: false,
       petGalleryVisible: true,
-      lightboxVisible: false,
-      contactVisible: false,
-    });
-  };
-
-  handleGalleryImageClick = (index) => {
-    const image = tattoos[index];
-    this.setState({
-      currentImage: [{ ...image }],
-      lightboxVisible: true,
-    });
-  };
-
-  handleCloseClick = () => {
-    this.setState({
-      currentImage: [],
-      lightboxVisible: false,
     });
   };
 
@@ -111,47 +87,58 @@ class SiteControl extends React.Component {
         />
       );
     }
-    return(
-    <div>
-     <Router basename='capstone'>
-        {navComponent}
-        <Routes>
-          <Route
-            path="/"
-            exact
-            element={
-              <React.Fragment>
-                <Header />
-                <About />
-                <FAQ />
-                <Location />
-              </React.Fragment>
-            }
-          />
-          <Route
-            path="/gallery"
-            exact
-            element={
-              <Gallery
-                onGalleryImageClick={this.handleGalleryImageClick}
-                photos={album}
-              />
-            }
-          />
-          <Route
-            path="/contact"
-            element={
-              <Contact />
-            } />
+    return (
+      <div>
+        <Router basename="capstone">
+          {navComponent}
+          <Routes>
+            <Route
+              path="/"
+              exact
+              element={
+                <React.Fragment>
+                  <Header />
+                  <About />
+                  <FAQ />
+                  <Location />
+                </React.Fragment>
+              }
+            />
+
+            <Route
+              path="/gallery"
+              exact
+              element={
+                <div style={{ animation: "fadeIn 1s" }}>
+                  <Gallery
+                    onGalleryImageClick={this.handleGalleryImageClick}
+                    photos={album}
+                  />
+                </div>
+              }
+            />
+
+            <Route
+              path="/contact"
+              element={
+                <div style={{ animation: "fadeIn 1s" }}>
+                  <Contact />
+                </div>
+              }
+            />
             <Route
               path="/policies"
               element={
-              <Policies />
-            } />
-        </Routes>
-      </Router>
-    </div>
-    )}
+                <div style={{ animation: "fadeIn 1s" }}>
+                  <Policies />
+                </div>
+              }
+            />
+          </Routes>
+        </Router>
+      </div>
+    );
+  }
 }
 
 export default SiteControl;

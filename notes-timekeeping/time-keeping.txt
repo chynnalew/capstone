@@ -138,4 +138,11 @@ Wed 12/22
   -update font size for phone media questions and about 
 1:25pm - 2 pm
   - minify images, add additional gallery images, update splash image
-  
+2:00pm-3:00pm
+  -attemptin to fade in components on render, reading into material ui
+  -couldn't get material ui to work with state change in gallery
+  -switching gears to try to get image uploads in email form
+4:15 pm
+  --wip, uploads images to uploadcare, but doesn't notify on form spark
+4:15-4:45pm
+  -success! photos upload correctly
