@@ -86,7 +86,7 @@
   }
   .aboutText {
     width:100%;
-    font-size: 1.15rem;
+    font-size: 1rem;
     padding-bottom:30px
   }
   /*FAQ*/
@@ -96,7 +96,10 @@
   }
   
   #faq a{
-    font-size: 1.25rem;
+    font-size: 1rem;
+  }
+  #faq p{
+    font-size: .75rem;
   }
   /*Location*/
   #location {

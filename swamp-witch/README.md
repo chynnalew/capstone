@@ -4,6 +4,8 @@
 
 #### Chynna Lew
 
+----------
+
 ## Technologies Used
 
 * JavaScript
@@ -11,52 +13,63 @@
 * React
 * CSS
 * HTML
-* formspark
-* upload care
-*
+
+## Additional Resources
+
+* [Formspark](https://formspark.io/) 
+* [UploadCare](https://uploadcare.com/)
+* [Google Recaptcha](https://www.google.com/recaptcha/admin)
+* [Responsive Design Testing](http://mattkersley.com/responsive/)
+* [css minifier](https://www.toptal.com/developers/cssminifier/)
+
+----------
 
 ## Description
-This application was created as a main portfolio/ homepage for a local tattoo artist
+This application is as a main portfolio/ homepage for a local tattoo artist that dynamically scales for different media sizes. It contains an email form with a backend provided by Formspark and Upload Care.
 
 Requested Specifications:
 Components:
-- ABOUT ME (main scroll?)
-- Gallery (standalone)
-  - Main Gallery (fade in)
-  - Flash (fade in)
-  - Pet Portraits (fade in)
-- FAQ (see good kind site for inspo) (main scroll)
-- LOCATION (main scroll)
+- ABOUT ME 
+- Gallery
+  - Tattoos
+  - Flash 
+  - Pet Portraits 
+- FAQ 
+- LOCATION 
   -google map, link to anatomy tattoo site
-- SHOP (link only)
+- SHOP 
   - link to big cartel (https://swampwitchtattoos.bigcartel.com/)
-- CONTACT (standalone)
-  - policies (terms and conditions) 
-    -section on contact
-    -- must read to continue (accept policies button)
-    -- upload vax card to continue?
+- CONTACT 
+  - policies 
   - email form
-    - their email (with confirm email is accurate)
+    - their email
     - inspo photos
     - placement
     - size
-    - color? black and grey?
+    - color
     - details
     - budget
+
+----------
 
 ## Diagrams / Component Layout
 <img src='./src/assets/img/victoriaTattoo.png' alt='page plan'/>
 <br/>
 <img src= './src/assets/img/swampWitchComponents.jpg' alt='component tree'/>
 
+----------
+
 
 ## Setup/Installation Requirements
 
-### This application requires a Formspark account, a UploadCare account, and a Google reCaptcha key
+This application requires a Formspark account, a UploadCare account, and a Google reCaptcha key
+
 * visit [Formspark](https://formspark.io/) to obtain a form id
 * visit [Google](https://www.google.com/recaptcha/admin) to set up a v2 account and obtain your keys
     * in your formspark settings, select Google reCaptcha v2 in the spam protection field and enter your Google ReCAPTCHA secret key
 * visit [UploadCare](https://uploadcare.com/) to obtain an API key
+
+----------
 
 * Download or clone [this](https://github.com/chynnalew/capstone) repository to your local machine
 * create a .env file in the root project directory (capstone/swamp-witch)
@@ -70,10 +83,17 @@ REACT_APP_UPLOADCARE_KEY='YOUR_UPLOADCARE_KEY'
 * Run the command '$ npm install' to install the needed plugins and packages
 * Open the application by running the command '$ npm run start'.
 
+----------
+
 ## Known Bugs
 * No known bugs
 
+----------
+
 ## License
+(CC BY-NC-ND 3.0)[https://creativecommons.org/licenses/by-nc-nd/3.0/]
+
+----------
 
 ## Contact Information
 [Chynna Lew](chynnalew@yahoo.com)
