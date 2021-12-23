@@ -156,3 +156,7 @@ Thursday 12/23
   - minify css, resize images to improve loadtime
 10:00-10:45
   -edit code to fix all the eslint warnings
+10:45-11:30am
+  -finishing touches, add ig link, fix any odd styling, etc.
+11:30 - forever:
+  -no touch, don't break!
