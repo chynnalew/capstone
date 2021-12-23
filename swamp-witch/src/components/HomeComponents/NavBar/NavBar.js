@@ -5,25 +5,48 @@ import PropTypes from "prop-types";
 import logo from "../../../assets/img/logo/sm-logo.png";
 
 const NavBar = (props) => {
-
   const [showDrop, setShowDrop] = React.useState(false);
 
   const toggle = () => {
-    setShowDrop(!showDrop)
-  }
+    setShowDrop(!showDrop);
+  };
 
   if (showDrop) {
     return (
       <div className="navWrap">
         <div className="dropdown">
           <div className="dropdownLinks">
-            <HashLink smooth onClick={() => { toggle(); props.onTattooClick() }}className="navLink" to="/gallery/#galleryTop">
+            <HashLink
+              smooth
+              onClick={() => {
+                toggle();
+                props.onTattooClick();
+              }}
+              className="navLink"
+              to="/gallery/#galleryTop"
+            >
               Tattoos
             </HashLink>
-            <HashLink smooth onClick={() => { toggle(); props.onFlashClick() }} className="navLink" to="/gallery/#galleryTop">
+            <HashLink
+              smooth
+              onClick={() => {
+                toggle();
+                props.onFlashClick();
+              }}
+              className="navLink"
+              to="/gallery/#galleryTop"
+            >
               Flash
             </HashLink>
-            <HashLink smooth onClick={() => { toggle(); props.onPetClick() }} className="navLink" to="/gallery/#galleryTop">
+            <HashLink
+              smooth
+              onClick={() => {
+                toggle();
+                props.onPetClick();
+              }}
+              className="navLink"
+              to="/gallery/#galleryTop"
+            >
               Pet Portraits
             </HashLink>
           </div>
@@ -42,13 +65,14 @@ const NavBar = (props) => {
             <HashLink smooth className="navLink" to="/#about">
               About
             </HashLink>
-            <div onClick={toggle} className="navLink" >
+            <div onClick={toggle} className="navLink">
               Gallery
             </div>
             <a
               className="navLink"
               href="https://swampwitchtattoos.bigcartel.com/"
               target="_blank"
+              rel="noreferrer"
             >
               Shop
             </a>
@@ -83,13 +107,14 @@ const NavBar = (props) => {
             <HashLink smooth className="navLink" to="/#about">
               About
             </HashLink>
-            <div onClick={toggle} className="navLink" >
+            <div onClick={toggle} className="navLink">
               Gallery
             </div>
             <a
               className="navLink"
               href="https://swampwitchtattoos.bigcartel.com/"
               target="_blank"
+              rel="noreferrer"
             >
               Shop
             </a>
@@ -108,7 +133,6 @@ const NavBar = (props) => {
       </div>
     );
   }
-
 };
 
 NavBar.propTypes = {

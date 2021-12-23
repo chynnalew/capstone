@@ -1,7 +1,7 @@
 import React from "react";
-import axios from "axios";
 import { NavLink } from "react-router-dom";
 import ReCAPTCHA from "react-google-recaptcha";
+// eslint-disable-next-line
 import uploadcare from "uploadcare-widget/uploadcare.lang.en.min.js";
 
 const Contact = () => {
@@ -11,43 +11,6 @@ const Contact = () => {
   const recaptchaKey = process.env.REACT_APP_RECAPTCHA_KEY;
   const recaptchaRef = React.useRef();
 
-  const [formState, setFormState] = React.useState();
-  const [rcToken, setRcToken] = React.useState();
-
-  const updateRecaptchaToken = (token) => {
-    setRcToken(token);
-  };
-
-  const inputFormControl = (event) => {
-    const { id, value } = event.target;
-    const formKey = id;
-    const updatedFormState = { ...formState };
-    updatedFormState[formKey] = value;
-    setFormState(updatedFormState);
-  };
-
-  const submitForm = async (event) => {
-    event.preventDefault();
-    await postSubmission();
-  };
-
-  const postSubmission = async () => {
-    const payload = {
-      name: formState.name,
-      email: formState.email,
-      description: formState.description,
-      placement: formState.placement,
-      size: formState.size,
-      color: formState.color,
-      budget: formState.budget
-    };
-    try {
-      const result = await axios.post(formSparkUrl, payload);
-      console.log(result);
-    } catch (error) {
-      console.log(error);
-    }
-  };
   return (
     <div id="contact">
       <h1 className="sectionHeader">Contact Information</h1>
@@ -67,51 +30,37 @@ const Contact = () => {
       <form id="contactForm" action={formSparkUrl}>
         <label class="formLabels">What is your name?</label>
         <br />
-        <input
-          type="text"
-          id="name"
-          name='name'
-          required="required"
-        />
+        <input type="text" id="name" name="name" required="required" />
         <br />
         <br />
         <label class="formLabels">Email</label>
         <br />
-        <input
-          type="email"
-          id="email"
-          name='email'
-          required="required"
-        />
+        <input type="email" id="email" name="email" required="required" />
         <br />
         <br />
         <label class="formLabels">Describe your tattoo idea:</label>
         <br />
-        <textarea
-          id="description"
-          name='description'
-          required="required"
-        />
+        <textarea id="description" name="description" required="required" />
         <br />
         <br />
         <label class="formLabels">Where on your body?</label>
         <br />
-        <input id="placement" name='placement' required="required" />
+        <input id="placement" name="placement" required="required" />
         <br />
         <br />
         <label class="formLabels">Approximate tattoo size?</label>
         <br />
-        <input  id="size" name='size' required="required" />
+        <input id="size" name="size" required="required" />
         <br />
         <br />
         <label class="formLabels">What are your desired colors?</label>
         <br />
-        <input id="color" name='color' required="required" />
+        <input id="color" name="color" required="required" />
         <br />
         <br />
         <label class="formLabels">What is your ideal budget?</label>
         <br />
-        <input id="budget" name='budget' required="required" />
+        <input id="budget" name="budget" required="required" />
         <br />
         <br />
         <label for="photo">Reference photos</label>
@@ -120,11 +69,12 @@ const Contact = () => {
           type="hidden"
           id="photos"
           name="photos"
+          // eslint-disable-next-line
           role="uploadcare-uploader"
           data-multiple="true"
           data-public-key={process.env.REACT_APP_UPLOADCARE_KEY}
         />
-        
+
         <br />
         <br />
         <div className="agree">
@@ -141,7 +91,6 @@ const Contact = () => {
           className="reCaptcha"
           ref={recaptchaRef}
           sitekey={recaptchaKey}
-          onChange={process.env.REACT_APP_UPLOADCARE_KEY}
         />
 
         <input type="submit" value="Send" />

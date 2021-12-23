@@ -152,3 +152,7 @@ Wed 12/22
 Thursday 12/23
 9:00 - 9:15 
   -update Readme.md and remove unnecessary files
+9:15-10:00
+  - minify css, resize images to improve loadtime
+10:00-10:45
+  -edit code to fix all the eslint warnings

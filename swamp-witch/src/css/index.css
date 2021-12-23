@@ -17,19 +17,17 @@ body:hover {
   cursor: default;
 }
 
-.fadeOut{
-  opacity:0;
-  width:0;
-  height:0;
+.fadeOut {
+  opacity: 0;
+  width: 0;
+  height: 0;
   transition: width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.5s;
-
 }
-.fadeIn{
-  opacity:1;
-  width:100px;
-  height:100px;
+.fadeIn {
+  opacity: 1;
+  width: 100px;
+  height: 100px;
   transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
-
 }
 
 .sectionHeader {
@@ -79,14 +77,15 @@ ion-icon:hover {
     0 0 7px rgb(119, 102, 56), 0 0 7px rgb(119, 102, 56),
     0 0 7px rgb(119, 102, 56), 0 0 7px rgb(119, 102, 56),
     0 0 7px rgb(119, 102, 56), 0 0 7px rgb(119, 102, 56),
-    0 0 7px rgb(119, 102, 56), 0 0 7px rgb(119, 102, 56), 0 0 15vw black, 0 0 13vw black, 0 0 12vw black,
-    0 0 10vw black, 0 0 7vw black, 0 0 5vw black, 0 0 3vw black, 0 0 2vw black;
+    0 0 7px rgb(119, 102, 56), 0 0 7px rgb(119, 102, 56), 0 0 15vw black,
+    0 0 13vw black, 0 0 12vw black, 0 0 10vw black, 0 0 7vw black, 0 0 5vw black,
+    0 0 3vw black, 0 0 2vw black;
 }
 
 .arrow-container {
   position: absolute;
   right: 50%;
-  transform: translate(-50%)
+  transform: translate(-50%);
 }
 
 @keyframes fadeIn {
@@ -130,7 +129,7 @@ ion-icon:hover {
   display: inline-block;
   margin: auto;
   margin-right: 9vw;
-  height:0;
+  height: 0;
 }
 .navBarLogo {
   z-index: 20000;
@@ -199,7 +198,6 @@ ion-icon:hover {
   top: 0;
   left: 0;
   transition: 0.3s ease-in-out;
-  
 }
 .navMenu2 {
   z-index: 1000;
@@ -207,7 +205,7 @@ ion-icon:hover {
   text-align: center;
   width: 100%;
   background: rgba(0, 0, 0, 0.925);
-  padding-bottom:60px;
+  padding-bottom: 60px;
 }
 .navLink2 {
   display: flex;
@@ -273,7 +271,7 @@ ion-icon:hover {
   padding: 10px;
   box-shadow: 2px 2px 5px rgb(60, 115, 151);
 }
-#faq a {
+#faq h5 {
   font-size: 2vw;
   text-decoration: none;
   color: rgb(114, 98, 54);
@@ -281,6 +279,7 @@ ion-icon:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0;
 }
 
 .answer {
@@ -303,9 +302,9 @@ ion-icon:hover {
 }
 
 .mapStyle {
-  display:block;
+  display: block;
   width: 100vw;
-  margin:auto;
+  margin: auto;
 }
 .mapText {
   text-align: center;
@@ -368,20 +367,21 @@ ion-icon:hover {
   align-items: center;
 }
 #contactForm {
-  display:block;
+  display: block;
   padding-bottom: 30px;
   text-align: left;
   padding: 30px;
-  background-color:#7f90b138;
+  background-color: #7f90b138;
 }
 #contact .sectionHeader {
   margin-bottom: 0;
-
 }
-.formLabels{
+.formLabels {
   text-align: left;
 }
-input, textarea, select {
+input,
+textarea,
+select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -391,7 +391,7 @@ input, textarea, select {
   box-sizing: border-box;
 }
 
-input[type=submit] {
+input[type="submit"] {
   width: 80%;
   background-color: rgb(60, 115, 151);
   color: white;
@@ -402,27 +402,28 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: rgb(114, 98, 54);
 }
 
-.email:link, .email:visited, .email:active {
+.email:link,
+.email:visited,
+.email:active {
   color: rgb(156, 131, 61);
   text-decoration: none;
   font-weight: 500;
 }
-.email:hover{
+.email:hover {
   font-size: larger;
-  color:  rgb(64, 147, 202);
+  color: rgb(64, 147, 202);
 }
-.agree{
-  width:90%;
+.agree {
+  width: 90%;
 }
-input[type=checkbox] {
+input[type="checkbox"] {
   max-width: 25px;
-
 }
 .reCaptcha {
-  width:100%;
-  margin: auto
+  width: 100%;
+  margin: auto;
 }

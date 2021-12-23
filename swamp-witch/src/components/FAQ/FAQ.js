@@ -16,12 +16,11 @@ const FAQ = () => {
       <div className="faqQuestions">
         {Data.map((q, index) => {
           return (
-            <React.Fragment>
+            <React.Fragment key={index}>
               <div className="faqItem" id="question1">
-                <a
+                <h5
                   className="question"
                   onClick={() => toggle(index)}
-                  key={index}
                 >
                   {q.question}
                   <span>
@@ -31,7 +30,7 @@ const FAQ = () => {
                       <ion-icon name="remove"></ion-icon>
                     )}
                   </span>
-                </a>
+                </h5>
                 {clicked === index ? (
                   <p className="answer">{q.answer}</p>
                 ) : null}
