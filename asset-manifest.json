@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/capstone/static/css/main.cb145d91.chunk.css",
-    "main.js": "/capstone/static/js/main.098d9f7d.chunk.js",
-    "main.js.map": "/capstone/static/js/main.098d9f7d.chunk.js.map",
-    "runtime-main.js": "/capstone/static/js/runtime-main.42293f44.js",
-    "runtime-main.js.map": "/capstone/static/js/runtime-main.42293f44.js.map",
-    "static/js/2.28c24f0a.chunk.js": "/capstone/static/js/2.28c24f0a.chunk.js",
-    "static/js/2.28c24f0a.chunk.js.map": "/capstone/static/js/2.28c24f0a.chunk.js.map",
-    "static/js/3.c8fd8c0d.chunk.js": "/capstone/static/js/3.c8fd8c0d.chunk.js",
-    "static/js/3.c8fd8c0d.chunk.js.map": "/capstone/static/js/3.c8fd8c0d.chunk.js.map",
+    "main.css": "/capstone/static/css/main.3f7f3aed.chunk.css",
+    "main.js": "/capstone/static/js/main.851da560.chunk.js",
+    "main.js.map": "/capstone/static/js/main.851da560.chunk.js.map",
+    "runtime-main.js": "/capstone/static/js/runtime-main.45b9d95a.js",
+    "runtime-main.js.map": "/capstone/static/js/runtime-main.45b9d95a.js.map",
+    "static/js/2.4a963fba.chunk.js": "/capstone/static/js/2.4a963fba.chunk.js",
+    "static/js/2.4a963fba.chunk.js.map": "/capstone/static/js/2.4a963fba.chunk.js.map",
+    "static/js/3.2ce14d38.chunk.js": "/capstone/static/js/3.2ce14d38.chunk.js",
+    "static/js/3.2ce14d38.chunk.js.map": "/capstone/static/js/3.2ce14d38.chunk.js.map",
     "index.html": "/capstone/index.html",
-    "static/css/main.cb145d91.chunk.css.map": "/capstone/static/css/main.cb145d91.chunk.css.map",
-    "static/js/2.28c24f0a.chunk.js.LICENSE.txt": "/capstone/static/js/2.28c24f0a.chunk.js.LICENSE.txt",
+    "static/css/main.3f7f3aed.chunk.css.map": "/capstone/static/css/main.3f7f3aed.chunk.css.map",
+    "static/js/2.4a963fba.chunk.js.LICENSE.txt": "/capstone/static/js/2.4a963fba.chunk.js.LICENSE.txt",
     "static/media/bondage.83649e13.png": "/capstone/static/media/bondage.83649e13.png",
     "static/media/butterfly-beetle.104e062f.jpeg": "/capstone/static/media/butterfly-beetle.104e062f.jpeg",
     "static/media/candleSpider.9033c6d4.png": "/capstone/static/media/candleSpider.9033c6d4.png",
@@ -37,12 +37,12 @@
     "static/media/kevin.f1eb09b8.jpeg": "/capstone/static/media/kevin.f1eb09b8.jpeg",
     "static/media/knife.34686ee6.jpeg": "/capstone/static/media/knife.34686ee6.jpeg",
     "static/media/mermaid.2508bcbc.png": "/capstone/static/media/mermaid.2508bcbc.png",
-    "static/media/index.css": "/capstone/static/media/splash.d468dad3.jpeg",
+    "static/media/styles.min.css": "/capstone/static/media/splash.d468dad3.jpeg",
     "static/media/octo.f8f9a792.jpeg": "/capstone/static/media/octo.f8f9a792.jpeg",
     "static/media/rat1.1c21ef96.png": "/capstone/static/media/rat1.1c21ef96.png",
     "static/media/rat2.5345cc5c.png": "/capstone/static/media/rat2.5345cc5c.png",
     "static/media/skele.3192499b.jpeg": "/capstone/static/media/skele.3192499b.jpeg",
-    "static/media/sm-logo.e60db56f.png": "/capstone/static/media/sm-logo.e60db56f.png",
+    "static/media/sm-logo.cb267b18.png": "/capstone/static/media/sm-logo.cb267b18.png",
     "static/media/spider-mouth.07585b86.jpeg": "/capstone/static/media/spider-mouth.07585b86.jpeg",
     "static/media/spiderHand.dce85e82.png": "/capstone/static/media/spiderHand.dce85e82.png",
     "static/media/swamp-thing.ae7c3f39.jpeg": "/capstone/static/media/swamp-thing.ae7c3f39.jpeg",
@@ -53,9 +53,9 @@
     "static/media/wheel.82e54a8b.jpeg": "/capstone/static/media/wheel.82e54a8b.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.42293f44.js",
-    "static/js/2.28c24f0a.chunk.js",
-    "static/css/main.cb145d91.chunk.css",
-    "static/js/main.098d9f7d.chunk.js"
+    "static/js/runtime-main.45b9d95a.js",
+    "static/js/2.4a963fba.chunk.js",
+    "static/css/main.3f7f3aed.chunk.css",
+    "static/js/main.851da560.chunk.js"
   ]
 }
