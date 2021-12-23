@@ -13,6 +13,9 @@ const Gallery = (props) => {
         </div>
       ))}
       </div>
+      <div className="igLogo">
+        <a href='https://www.instagram.com/swamp__witch__/' target="_blank">Visit my Instagram for more photos: <br/><ion-icon name="logo-instagram" ></ion-icon></a>
+      </div>
       </div>
   )
 }

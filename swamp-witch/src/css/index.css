@@ -255,6 +255,23 @@ ion-icon:hover {
   float: right;
   width: 50%;
 }
+.igLogo{
+  font-size: 20px;
+  padding:30px 0;
+  color:#b49a45;
+  width:100%;
+  text-align: center;
+}
+.igLogo a {
+  text-decoration: none;
+}
+.igLogo a:visited {
+  color:#b49a45
+}
+.igLogo a:hover {
+  color: rgb(60, 115, 151);
+  font-weight: 600;
+}
 
 /*FAQ styles*/
 
